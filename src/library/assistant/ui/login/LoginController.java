@@ -64,6 +64,8 @@ public class LoginController implements Initializable {
             Stage stage = new Stage(StageStyle.DECORATED);
             stage.setTitle("Library Assistant");
             stage.setScene(new Scene(parent));
+            stage.setResizable(true);
+            stage.setMaximized(true);
             stage.show();
             LibraryAssistantUtil.setStageIcon(stage);
         } catch (IOException ex) {

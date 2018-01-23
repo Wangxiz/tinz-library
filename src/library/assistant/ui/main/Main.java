@@ -20,6 +20,7 @@ public class Main extends Application {
         stage.setScene(scene);
         stage.show();
         stage.setTitle("Library Assistant Login");
+        stage.setResizable(false);
 
         LibraryAssistantUtil.setStageIcon(stage);
         
