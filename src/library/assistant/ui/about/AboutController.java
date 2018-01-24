@@ -16,17 +16,15 @@ import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import library.assistant.util.LibraryAssistantUtil;
 
-public class AboutController implements Initializable {
+public class AboutController {
 
     private static final String LINKED_IN = "https://in.linkedin.com/in/muhammedafsalvillan";
     private static final String FACEBOOK = "http://facebook.com/afsalashyana";
     private static final String WEBSITE = "http://www.genuinecoder.com";
     private static final String YOUTUBE = "https://www.youtube.com/GenuineCoder";
 
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }
+    @FXML
+    public void initialize() {}
 
     private void loadWebpage(String url) {
         try {
@@ -50,22 +48,22 @@ public class AboutController implements Initializable {
     }
 
     @FXML
-    private void loadYoutubeChannel(ActionEvent event) {
+    private void loadYoutubeChannel() {
         loadWebpage(YOUTUBE);
     }
 
     @FXML
-    private void loadBlog(ActionEvent event) {
+    private void loadBlog() {
         loadWebpage(WEBSITE);
     }
 
     @FXML
-    private void loadLinkedIN(ActionEvent event) {
+    private void loadLinkedIN() {
         loadWebpage(LINKED_IN);
     }
 
     @FXML
-    private void loadFacebook(ActionEvent event) {
+    private void loadFacebook() {
         loadWebpage(FACEBOOK);
     }
 }

@@ -1,21 +1,17 @@
 package library.assistant.ui.listbook;
 
 import java.io.IOException;
-import java.net.URL;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Optional;
-import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -32,9 +28,8 @@ import library.assistant.ui.addbook.BookAddController;
 import library.assistant.ui.main.MainController;
 import library.assistant.util.LibraryAssistantUtil;
 
-public class BookListController implements Initializable {
-
-    ObservableList<Book> list = FXCollections.observableArrayList();
+public class BookListController {
+    private ObservableList<Book> list = FXCollections.observableArrayList();
 
     @FXML
     private AnchorPane rootPane;
@@ -51,8 +46,8 @@ public class BookListController implements Initializable {
     @FXML
     private TableColumn<Book, Boolean> availabilityCol;
 
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
+    @FXML
+    public void initialize() {
         initCol();
         loadData();
     }
@@ -62,7 +57,7 @@ public class BookListController implements Initializable {
         idCol.setCellValueFactory(new PropertyValueFactory<>("id"));
         authorCol.setCellValueFactory(new PropertyValueFactory<>("author"));
         publisherCol.setCellValueFactory(new PropertyValueFactory<>("publisher"));
-        availabilityCol.setCellValueFactory(new PropertyValueFactory<>("availabilty"));
+        availabilityCol.setCellValueFactory(new PropertyValueFactory<>("availability"));
     }
 
     private void loadData() {
@@ -72,15 +67,14 @@ public class BookListController implements Initializable {
         String qu = "SELECT * FROM BOOK";
         ResultSet rs = handler.execQuery(qu);
         try {
-            while (rs.next()) {
-                String titlex = rs.getString("title");
+            while (rs != null && rs.next()) {
+                String title = rs.getString("title");
                 String author = rs.getString("author");
                 String id = rs.getString("id");
                 String publisher = rs.getString("publisher");
                 Boolean avail = rs.getBoolean("isAvail");
 
-                list.add(new Book(titlex, id, author, publisher, avail));
-
+                list.add(new Book(title, id, author, publisher, avail));
             }
         } catch (SQLException ex) {
             Logger.getLogger(BookAddController.class.getName()).log(Level.SEVERE, null, ex);
@@ -90,7 +84,7 @@ public class BookListController implements Initializable {
     }
 
     @FXML
-    private void handleBookDeleteOption(ActionEvent event) {
+    private void handleBookDeleteOption() {
         //Fetch the selected row
         Book selectedForDeletion = tableView.getSelectionModel().getSelectedItem();
         if (selectedForDeletion == null) {
@@ -105,7 +99,7 @@ public class BookListController implements Initializable {
         alert.setTitle("Deleting book");
         alert.setContentText("Are you sure want to delete the book " + selectedForDeletion.getTitle() + " ?");
         Optional<ButtonType> answer = alert.showAndWait();
-        if (answer.get() == ButtonType.OK) {
+        if (answer.isPresent() && answer.get() == ButtonType.OK) {
             Boolean result = DatabaseHandler.getInstance().deleteBook(selectedForDeletion);
             if (result) {
                 AlertMaker.showSimpleAlert("Book deleted", selectedForDeletion.getTitle() + " was deleted successfully.");
@@ -119,7 +113,7 @@ public class BookListController implements Initializable {
     }
 
     @FXML
-    private void handleBookEditOption(ActionEvent event) {
+    private void handleBookEditOption() {
         //Fetch the selected row
         Book selectedForEdit = tableView.getSelectionModel().getSelectedItem();
         if (selectedForEdit == null) {
@@ -130,7 +124,7 @@ public class BookListController implements Initializable {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/library/assistant/ui/addbook/add_book.fxml"));
             Parent parent = loader.load();
 
-            BookAddController controller = (BookAddController) loader.getController();
+            BookAddController controller = loader.getController();
             controller.inflateUI(selectedForEdit);
             
             Stage stage = new Stage(StageStyle.DECORATED);
@@ -139,9 +133,7 @@ public class BookListController implements Initializable {
             stage.show();
             LibraryAssistantUtil.setStageIcon(stage);
             
-            stage.setOnCloseRequest((e)->{
-                handleRefresh(new ActionEvent());
-            });
+            stage.setOnCloseRequest((e)-> handleRefresh());
             
         } catch (IOException ex) {
             Logger.getLogger(MainController.class.getName()).log(Level.SEVERE, null, ex);
@@ -149,25 +141,24 @@ public class BookListController implements Initializable {
     }
 
     @FXML
-    private void handleRefresh(ActionEvent event) 
+    private void handleRefresh()
     {
         loadData();
     }
 
     public static class Book {
-
         private final SimpleStringProperty title;
         private final SimpleStringProperty id;
         private final SimpleStringProperty author;
         private final SimpleStringProperty publisher;
-        private final SimpleBooleanProperty availabilty;
+        private final SimpleBooleanProperty availability;
 
         public Book(String title, String id, String author, String pub, Boolean avail) {
             this.title = new SimpleStringProperty(title);
             this.id = new SimpleStringProperty(id);
             this.author = new SimpleStringProperty(author);
             this.publisher = new SimpleStringProperty(pub);
-            this.availabilty = new SimpleBooleanProperty(avail);
+            this.availability = new SimpleBooleanProperty(avail);
         }
 
         public String getTitle() {
@@ -186,10 +177,8 @@ public class BookListController implements Initializable {
             return publisher.get();
         }
 
-        public Boolean getAvailabilty() {
-            return availabilty.get();
+        public Boolean getAvailability() {
+            return availability.get();
         }
-
     }
-
 }

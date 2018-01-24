@@ -19,7 +19,6 @@ import javafx.scene.layout.Priority;
 import javafx.scene.layout.StackPane;
 
 public class AlertMaker {
-
     public static void showSimpleAlert(String title, String content) {
         Alert alert = new Alert(AlertType.INFORMATION);
         alert.setTitle(title);
@@ -106,20 +105,16 @@ public class AlertMaker {
         JFXDialogLayout dialogLayout = new JFXDialogLayout();
         JFXDialog dialog = new JFXDialog(root, dialogLayout, JFXDialog.DialogTransition.TOP);
         
-        controls.forEach(controlButton->{
+        controls.forEach(controlButton -> {
             controlButton.getStyleClass().add("dialog-button");
-            controlButton.addEventHandler(MouseEvent.MOUSE_CLICKED, (MouseEvent mouseEvent) -> {
-                dialog.close();
-            });
+            controlButton.addEventHandler(MouseEvent.MOUSE_CLICKED, (MouseEvent mouseEvent) -> dialog.close());
         });
 
         dialogLayout.setHeading(new Label(header));
         dialogLayout.setBody(new Label(body));
         dialogLayout.setActions(controls);
         dialog.show();
-        dialog.setOnDialogClosed((JFXDialogEvent event1) -> {
-            nodeToBeBlurred.setEffect(null);
-        });
+        dialog.setOnDialogClosed((JFXDialogEvent event1) -> nodeToBeBlurred.setEffect(null));
         nodeToBeBlurred.setEffect(blur);
     }
 }

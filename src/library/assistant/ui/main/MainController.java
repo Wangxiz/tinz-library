@@ -39,8 +39,7 @@ import library.assistant.alert.AlertMaker;
 import library.assistant.database.DatabaseHandler;
 import library.assistant.util.LibraryAssistantUtil;
 
-public class MainController implements Initializable {
-
+public class MainController {
     private static final String BOOK_NOT_AVAILABLE = "Not Available";
     private static final String NO_SUCH_BOOK_AVAILABLE = "No Such Book Available";
     private static final String NO_SUCH_MEMBER_AVAILABLE = "No Such Member Available";
@@ -114,8 +113,8 @@ public class MainController implements Initializable {
     @FXML
     private JFXTabPane mainTabPane;
 
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
+    @FXML
+    public void initialize() {
         JFXDepthManager.setDepth(book_info, 1);
         JFXDepthManager.setDepth(member_info, 1);
 
@@ -126,7 +125,7 @@ public class MainController implements Initializable {
     }
 
     @FXML
-    private void loadBookInfo(ActionEvent event) {
+    private void loadBookInfo() {
         clearBookCache();
         enableDisableGraph(false);
 
@@ -135,7 +134,7 @@ public class MainController implements Initializable {
         ResultSet rs = databaseHandler.execQuery(qu);
         Boolean flag = false;
         try {
-            while (rs.next()) {
+            while (rs != null && rs.next()) {
                 String bName = rs.getString("title");
                 String bAuthor = rs.getString("author");
                 Boolean bStatus = rs.getBoolean("isAvail");
@@ -157,19 +156,19 @@ public class MainController implements Initializable {
         }
     }
 
-    void clearBookCache() {
+    private void clearBookCache() {
         bookName.setText("");
         bookAuthor.setText("");
         bookStatus.setText("");
     }
 
-    void clearMemberCache() {
+    private void clearMemberCache() {
         memberName.setText("");
         memberMobile.setText("");
     }
 
     @FXML
-    private void loadMemberInfo(ActionEvent event) {
+    private void loadMemberInfo() {
         clearMemberCache();
         enableDisableGraph(false);
 
@@ -178,7 +177,7 @@ public class MainController implements Initializable {
         ResultSet rs = databaseHandler.execQuery(qu);
         Boolean flag = false;
         try {
-            while (rs.next()) {
+            while (rs != null && rs.next()) {
                 String mName = rs.getString("name");
                 String mMobile = rs.getString("mobile");
 
@@ -198,7 +197,7 @@ public class MainController implements Initializable {
     }
 
     @FXML
-    private void loadIssueOperation(ActionEvent event) {
+    private void loadIssueOperation() {
         if (checkForIssueValidity()) {
             JFXButton btn = new JFXButton("Okay!");
             AlertMaker.showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(btn), "Invalid Input", null);
@@ -248,7 +247,7 @@ public class MainController implements Initializable {
     }
 
     @FXML
-    private void loadBookInfo2(ActionEvent event) {
+    private void loadBookInfo2() {
         clearEntries();
         ObservableList<String> issueData = FXCollections.observableArrayList();
         isReadyForSubmission = false;
@@ -265,7 +264,7 @@ public class MainController implements Initializable {
                     + "ON ISSUE.bookID=BOOK.ID\n"
                     + "WHERE ISSUE.bookID='" + id + "'";
             ResultSet rs = databaseHandler.execQuery(myQuery);
-            if (rs.next()) {
+            if (rs != null && rs.next()) {
                 memberNameHolder.setText(rs.getString("name"));
                 memberContactHolder.setText(rs.getString("mobile"));
                 memberEmailHolder.setText(rs.getString("email"));
@@ -296,7 +295,7 @@ public class MainController implements Initializable {
     }
 
     @FXML
-    private void loadSubmissionOp(ActionEvent event) {
+    private void loadSubmissionOp() {
         if (!isReadyForSubmission) {
             JFXButton btn = new JFXButton("Okay!");
             AlertMaker.showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(btn), "Please select a book to submit", "Cant simply submit a null book :-)");
@@ -329,7 +328,7 @@ public class MainController implements Initializable {
     }
 
     @FXML
-    private void loadRenewOp(ActionEvent event) {
+    private void loadRenewOp() {
         if (!isReadyForSubmission) {
             JFXButton btn = new JFXButton("Okay!");
             AlertMaker.showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(btn), "Please select a book to renew", null);
@@ -358,36 +357,36 @@ public class MainController implements Initializable {
     }
 
     @FXML
-    private void handleMenuClose(ActionEvent event) {
+    private void handleMenuClose() {
         ((Stage) rootPane.getScene().getWindow()).close();
     }
 
     @FXML
-    private void handleMenuAddBook(ActionEvent event) {
+    private void handleMenuAddBook() {
         LibraryAssistantUtil.loadWindow(getClass().getResource("/library/assistant/ui/addbook/add_book.fxml"), "Add New Book", null);
     }
 
     @FXML
-    private void handleMenuAddMember(ActionEvent event) {
+    private void handleMenuAddMember() {
         LibraryAssistantUtil.loadWindow(getClass().getResource("/library/assistant/ui/addmember/member_add.fxml"), "Add New Member", null);
     }
 
     @FXML
-    private void handleMenuViewBook(ActionEvent event) {
+    private void handleMenuViewBook() {
         LibraryAssistantUtil.loadWindow(getClass().getResource("/library/assistant/ui/listbook/book_list.fxml"), "Book List", null);
     }
 
-    private void handleMenuViewMember(ActionEvent event) {
+    private void handleMenuViewMember() {
         LibraryAssistantUtil.loadWindow(getClass().getResource("/library/assistant/ui/listmember/member_list.fxml"), "Member List", null);
     }
 
     @FXML
-    private void handleAboutMenu(ActionEvent event) {
+    private void handleAboutMenu() {
         LibraryAssistantUtil.loadWindow(getClass().getResource("/library/assistant/ui/about/about.fxml"), "About Me", null);
     }
 
     @FXML
-    private void handleMenuFullScreen(ActionEvent event) {
+    private void handleMenuFullScreen() {
         Stage stage = ((Stage) rootPane.getScene().getWindow());
         stage.setFullScreen(!stage.isFullScreen());
     }
@@ -482,9 +481,11 @@ public class MainController implements Initializable {
     private boolean checkForIssueValidity() {
         bookIDInput.fireEvent(new ActionEvent());
         memberIDInput.fireEvent(new ActionEvent());
-        return bookIDInput.getText().isEmpty() || memberIDInput.getText().isEmpty()
-                || memberName.getText().isEmpty() || bookName.getText().isEmpty()
-                || bookName.getText().equals(NO_SUCH_BOOK_AVAILABLE) || memberName.getText().equals(NO_SUCH_MEMBER_AVAILABLE);
+        return bookIDInput.getText().isEmpty()
+                || memberIDInput.getText().isEmpty()
+                || memberName.getText().isEmpty()
+                || bookName.getText().isEmpty()
+                || bookName.getText().equals(NO_SUCH_BOOK_AVAILABLE)
+                || memberName.getText().equals(NO_SUCH_MEMBER_AVAILABLE);
     }
-
 }

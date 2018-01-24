@@ -12,15 +12,14 @@ import library.assistant.alert.AlertMaker;
 import org.apache.commons.codec.digest.DigestUtils;
 
 public class Preferences {
+    private static final String CONFIG_FILE = "config.txt";
 
-    public static final String CONFIG_FILE = "config.txt";
+    private int nDaysWithoutFine;
+    private float finePerDay;
+    private String username;
+    private String password;
 
-    int nDaysWithoutFine;
-    float finePerDay;
-    String username;
-    String password;
-
-    public Preferences() {
+    private Preferences() {
         nDaysWithoutFine = 14;
         finePerDay = 2;
         username = "admin";
@@ -58,8 +57,10 @@ public class Preferences {
     public void setPassword(String password) {
         if (password.length() < 16) {
             this.password = DigestUtils.shaHex(password);
-        }else
+        }
+        else {
             this.password = password;
+        }
     }
 
     public static void initConfig() {
@@ -73,7 +74,9 @@ public class Preferences {
             Logger.getLogger(Preferences.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
             try {
-                writer.close();
+                if (writer != null) {
+                    writer.close();
+                }
             } catch (IOException ex) {
                 Logger.getLogger(Preferences.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -105,11 +108,12 @@ public class Preferences {
             AlertMaker.showErrorMessage(ex, "Failed", "Cant save configuration file");
         } finally {
             try {
-                writer.close();
+                if (writer != null) {
+                    writer.close();
+                }
             } catch (IOException ex) {
                 Logger.getLogger(Preferences.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }
-
 }

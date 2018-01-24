@@ -38,7 +38,7 @@ public final class DatabaseHandler {
         return handler;
     }
 
-    void createConnection() {
+    private void createConnection() {
         try {
             Class.forName("org.apache.derby.jdbc.EmbeddedDriver").newInstance();
             conn = DriverManager.getConnection(DB_URL);
@@ -48,7 +48,7 @@ public final class DatabaseHandler {
         }
     }
 
-    void setupBookTable() {
+    private void setupBookTable() {
         String TABLE_NAME = "BOOK";
         try {
             stmt = conn.createStatement();
@@ -73,7 +73,7 @@ public final class DatabaseHandler {
         }
     }
 
-    void setupMemberTable() {
+    private void setupMemberTable() {
         String TABLE_NAME = "MEMBER";
         try {
             stmt = conn.createStatement();
@@ -93,14 +93,12 @@ public final class DatabaseHandler {
             }
         } catch (SQLException e) {
             System.err.println(e.getMessage() + " --- setupDatabase");
-        } finally {
         }
     }
 
-    void setupIssueTable() {
+    private void setupIssueTable() {
         String TABLE_NAME = "ISSUE";
         try {
-
             stmt = conn.createStatement();
             DatabaseMetaData dbm = conn.getMetaData();
 
@@ -119,7 +117,6 @@ public final class DatabaseHandler {
             }
         } catch (SQLException e) {
             System.err.println(e.getMessage() + " --- setupDatabase");
-        } finally {
         }
     }
 
@@ -131,7 +128,6 @@ public final class DatabaseHandler {
         } catch (SQLException ex) {
             System.out.println("Exception at execQuery:dataHandler" + ex.getLocalizedMessage());
             return null;
-        } finally {
         }
         return result;
     }
@@ -166,8 +162,8 @@ public final class DatabaseHandler {
 
     public boolean isBookAlreadyIssued(Book book) {
         try {
-            String checkstmt = "SELECT COUNT(*) FROM ISSUE WHERE bookid=?";
-            PreparedStatement stmt = conn.prepareStatement(checkstmt);
+            String checkStmt = "SELECT COUNT(*) FROM ISSUE WHERE bookid=?";
+            PreparedStatement stmt = conn.prepareStatement(checkStmt);
             stmt.setString(1, book.getId());
             ResultSet rs = stmt.executeQuery();
             if (rs.next()) {
@@ -183,8 +179,8 @@ public final class DatabaseHandler {
 
     public boolean deleteMember(MemberListController.Member member) {
         try {
-            String deleteStatement = "DELETE FROM MEMBER WHERE id = ?";
-            PreparedStatement stmt = conn.prepareStatement(deleteStatement);
+            String deleteStmt = "DELETE FROM MEMBER WHERE id = ?";
+            PreparedStatement stmt = conn.prepareStatement(deleteStmt);
             stmt.setString(1, member.getId());
             int res = stmt.executeUpdate();
             if (res == 1) {
@@ -198,8 +194,8 @@ public final class DatabaseHandler {
 
     public boolean isMemberHasAnyBooks(MemberListController.Member member) {
         try {
-            String checkstmt = "SELECT COUNT(*) FROM ISSUE WHERE memberID=?";
-            PreparedStatement stmt = conn.prepareStatement(checkstmt);
+            String checkStmt = "SELECT COUNT(*) FROM ISSUE WHERE memberID=?";
+            PreparedStatement stmt = conn.prepareStatement(checkStmt);
             stmt.setString(1, member.getId());
             ResultSet rs = stmt.executeQuery();
             if (rs.next()) {
@@ -245,22 +241,20 @@ public final class DatabaseHandler {
         return false;
     }
 
-    public static void main(String[] args) throws Exception {
-
-    }
-
     public ObservableList<PieChart.Data> getBookGraphStatistics() {
         ObservableList<PieChart.Data> data = FXCollections.observableArrayList();
         try {
             String qu1 = "SELECT COUNT(*) FROM BOOK";
             String qu2 = "SELECT COUNT(*) FROM ISSUE";
+
             ResultSet rs = execQuery(qu1);
-            if (rs.next()) {
+            if (rs != null && rs.next()) {
                 int count = rs.getInt(1);
                 data.add(new PieChart.Data("Total Books (" + count + ")", count));
             }
+
             rs = execQuery(qu2);
-            if (rs.next()) {
+            if (rs != null && rs.next()) {
                 int count = rs.getInt(1);
                 data.add(new PieChart.Data("Issued Books (" + count + ")", count));
             }
@@ -275,13 +269,15 @@ public final class DatabaseHandler {
         try {
             String qu1 = "SELECT COUNT(*) FROM MEMBER";
             String qu2 = "SELECT COUNT(DISTINCT memberID) FROM ISSUE";
+
             ResultSet rs = execQuery(qu1);
-            if (rs.next()) {
+            if (rs != null && rs.next()) {
                 int count = rs.getInt(1);
                 data.add(new PieChart.Data("Total Members (" + count + ")", count));
             }
+
             rs = execQuery(qu2);
-            if (rs.next()) {
+            if (rs != null && rs.next()) {
                 int count = rs.getInt(1);
                 data.add(new PieChart.Data("Members with books (" + count + ")", count));
             }

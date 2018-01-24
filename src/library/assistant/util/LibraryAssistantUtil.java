@@ -23,7 +23,7 @@ public class LibraryAssistantUtil {
     public static void loadWindow(URL loc, String title, Stage parentStage) {
         try {
             Parent parent = FXMLLoader.load(loc);
-            Stage stage = null;
+            Stage stage;
             if (parentStage != null) {
                 stage = parentStage;
             } else {
