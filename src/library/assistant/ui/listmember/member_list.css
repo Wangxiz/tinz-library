@@ -2,3 +2,7 @@
 .mainFxmlClass {
 
 }
+
+#nameColumn, #memberIDColumn, #mobileColumn {
+    -fx-alignment: center;
+}

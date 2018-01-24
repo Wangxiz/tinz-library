@@ -143,7 +143,6 @@ public class MemberListController {
         }
     }
 
-
     public static class Member {
         private final SimpleStringProperty name;
         private final SimpleStringProperty id;

@@ -11,9 +11,11 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+
 import library.assistant.alert.AlertMaker;
 import library.assistant.database.DatabaseHandler;
-import library.assistant.ui.listbook.BookListController;
+
+import static library.assistant.ui.listbook.BookListController.Book;
 
 public class BookAddController {
     private DatabaseHandler handler;
@@ -51,6 +53,7 @@ public class BookAddController {
         }
 
         if (isInEditMode) {
+            cancel();
             handleEditOperation();
             return;
         }
@@ -100,7 +103,7 @@ public class BookAddController {
         }
     }
 
-    public void inflateUI(BookListController.Book book) {
+    public void inflateUI(Book book) {
         title.setText(book.getTitle());
         id.setText(book.getId());
         author.setText(book.getAuthor());
@@ -110,7 +113,7 @@ public class BookAddController {
     }
 
     private void handleEditOperation() {
-        BookListController.Book book = new BookListController.Book(title.getText(), id.getText(), author.getText(), publisher.getText(), true);
+        Book book = new Book(title.getText(), id.getText(), author.getText(), publisher.getText(), true);
         if (handler.updateBook(book)) {
             AlertMaker.showSimpleAlert("Success", "Book Updated");
         }

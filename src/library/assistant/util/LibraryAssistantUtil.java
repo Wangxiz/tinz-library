@@ -13,7 +13,6 @@ import javafx.stage.StageStyle;
 import library.assistant.ui.main.MainController;
 
 public class LibraryAssistantUtil {
-
     private static final String IMAGE_LOC = "/resources/icon.png";
 
     public static void setStageIcon(Stage stage) {

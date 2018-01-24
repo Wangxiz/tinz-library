@@ -2,3 +2,7 @@
 .mainFxmlClass {
 
 }
+
+#availabilityColumn, #ISBNColumn {
+    -fx-alignment: center;
+}

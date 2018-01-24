@@ -13,8 +13,9 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.chart.PieChart;
 import javax.swing.JOptionPane;
-import library.assistant.ui.listbook.BookListController.Book;
-import library.assistant.ui.listmember.MemberListController;
+
+import static library.assistant.ui.listbook.BookListController.Book;
+import static library.assistant.ui.listmember.MemberListController.Member;
 
 public final class DatabaseHandler {
 
@@ -141,7 +142,6 @@ public final class DatabaseHandler {
             JOptionPane.showMessageDialog(null, "Error:" + ex.getMessage(), "Error Occured", JOptionPane.ERROR_MESSAGE);
             System.out.println("Exception at execQuery:dataHandler" + ex.getLocalizedMessage());
             return false;
-        } finally {
         }
     }
 
@@ -177,7 +177,7 @@ public final class DatabaseHandler {
         return false;
     }
 
-    public boolean deleteMember(MemberListController.Member member) {
+    public boolean deleteMember(Member member) {
         try {
             String deleteStmt = "DELETE FROM MEMBER WHERE id = ?";
             PreparedStatement stmt = conn.prepareStatement(deleteStmt);
@@ -192,7 +192,7 @@ public final class DatabaseHandler {
         return false;
     }
 
-    public boolean isMemberHasAnyBooks(MemberListController.Member member) {
+    public boolean isMemberHasAnyBooks(Member member) {
         try {
             String checkStmt = "SELECT COUNT(*) FROM ISSUE WHERE memberID=?";
             PreparedStatement stmt = conn.prepareStatement(checkStmt);
@@ -225,7 +225,7 @@ public final class DatabaseHandler {
         return false;
     }
 
-    public boolean updateMember(MemberListController.Member member) {
+    public boolean updateMember(Member member) {
         try {
             String update = "UPDATE MEMBER SET NAME=?, EMAIL=?, MOBILE=? WHERE ID=?";
             PreparedStatement stmt = conn.prepareStatement(update);

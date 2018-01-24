@@ -134,15 +134,13 @@ public class BookListController {
             LibraryAssistantUtil.setStageIcon(stage);
             
             stage.setOnCloseRequest((e)-> handleRefresh());
-            
         } catch (IOException ex) {
             Logger.getLogger(MainController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
     @FXML
-    private void handleRefresh()
-    {
+    private void handleRefresh() {
         loadData();
     }
 

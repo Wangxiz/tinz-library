@@ -18,7 +18,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="1000.0" stylesheets="@../../../../resources/dark-theme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.assistant.ui.main.MainController">
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="1000.0" stylesheets="@../../../../resources/dark-theme.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.assistant.ui.main.MainController">
    <children>
       <AnchorPane fx:id="rootAnchorPane">
          <children>
@@ -40,7 +40,7 @@
                         <Menu mnemonicParsing="false" text="View">
                            <items>
                               <MenuItem mnemonicParsing="false" onAction="#handleMenuViewBook" text="View Book" />
-                              <MenuItem mnemonicParsing="false" onAction="#handleMenuAddMember" text="View Members" />
+                              <MenuItem mnemonicParsing="false" onAction="#handleMenuViewMember" text="View Members" />
                               <MenuItem mnemonicParsing="false" onAction="#handleMenuFullScreen" text="Full Screen" />
                            </items>
                         </Menu>

@@ -1,20 +1,16 @@
 package library.assistant.ui.addmember;
 
-import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
-import java.net.URL;
-import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.stage.Stage;
 import library.assistant.alert.AlertMaker;
 import library.assistant.database.DatabaseHandler;
-import library.assistant.ui.listmember.MemberListController;
-import library.assistant.ui.listmember.MemberListController.Member;
+
+import static library.assistant.ui.listmember.MemberListController.Member;
 
 public class MemberAddController {
     private DatabaseHandler handler;
+    private Boolean isInEditMode = false;
 
     @FXML
     private JFXTextField name;
@@ -24,8 +20,6 @@ public class MemberAddController {
     private JFXTextField mobile;
     @FXML
     private JFXTextField email;
-    
-    private Boolean isInEditMode = false;
 
     @FXML
     public void initialize() {
@@ -52,6 +46,7 @@ public class MemberAddController {
         }
         
         if(isInEditMode) {
+            cancel();
             handleUpdateMember();
             return;
         }
@@ -73,7 +68,7 @@ public class MemberAddController {
         }
     }
     
-    public void infalteUI(MemberListController.Member member) {
+    public void infalteUI(Member member) {
         name.setText(member.getName());
         id.setText(member.getId());
         id.setEditable(false);
@@ -84,7 +79,7 @@ public class MemberAddController {
     }
 
     private void handleUpdateMember() {
-        Member member = new MemberListController.Member(name.getText(), id.getText(), mobile.getText(), email.getText());
+        Member member = new Member(name.getText(), id.getText(), mobile.getText(), email.getText());
         if (DatabaseHandler.getInstance().updateMember(member)) {
             AlertMaker.showSimpleAlert("Success", "Member Updated");
         } else {

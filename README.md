@@ -3,16 +3,26 @@ This is a library management software developed using JavaFX programming languag
 
 ## TODOs
 - 将完成操作后的提醒换为下面这种
-<p><a href="https://camo.githubusercontent.com/234d9a3fb842aa373c56486b4f7a86895290d196/687474703a2f2f6a666f656e69782e636f6d2f6769662f69636f6e732d736e61636b6261722e676966" target="_blank"><img src="https://camo.githubusercontent.com/234d9a3fb842aa373c56486b4f7a86895290d196/687474703a2f2f6a666f656e69782e636f6d2f6769662f69636f6e732d736e61636b6261722e676966" alt="Alt text" title="Masonry Demo" data-canonical-src="http://jfoenix.com/gif/masonry.gif" style="max-width:100%;"></a></p>
+<p><a>
+<img src="https://goo.gl/Ez1Eeq" alt="Alt text" title="Masonry Demo" style="max-width:100%;">
+</a></p>
 
 - 使用 JFoenix Dialog
+- 使用 Maven
 
-## Releases 
+## Bugs
+- \#01 当开启了 book list 等窗口，关闭主窗口时，不会退出程序
+- \#02 member list 不能正常放大缩小
+- \#03 ~~菜单栏中 View->Member 不是弹出列表窗口，而是新建 member窗口~~ **Fixed!**
+
+## Releases
 ### 2018-01-24
 - 去掉 Login 界面的标题栏
 - 更新代码风格
 - add_book add_member 确认时退出添加界面
 - Login 界面始终置于最上层
+- edit_book edit_member 确认时退出编辑界面
+- fixed bug\#03
 
 ## Libraries Used
   * [JFoenix](https://github.com/jfoenixadmin/JFoenix) - JavaFX Material Design Library
