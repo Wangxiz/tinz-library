@@ -8,7 +8,6 @@ This is a library management software developed using JavaFX programming languag
 </a></p>
 
 - 使用 JFoenix Dialog
-- 使用 Maven
 
 ## Bugs
 - \#01 当开启了 book list 等窗口，关闭主窗口时，不会退出程序
@@ -23,6 +22,7 @@ This is a library management software developed using JavaFX programming languag
 - Login 界面始终置于最上层
 - edit_book edit_member 确认时退出编辑界面
 - fixed bug\#03
+- 使用 Maven
 
 ## Libraries Used
   * [JFoenix](https://github.com/jfoenixadmin/JFoenix) - JavaFX Material Design Library
