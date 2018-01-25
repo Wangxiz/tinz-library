@@ -12,10 +12,12 @@ import javafx.scene.control.Alert;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-import util.alert.AlertMaker;
 import database.DatabaseHandler;
 
 import static ui.listbook.BookListController.Book;
+import static util.alert.AlertMaker.showErrorMessage;
+import static util.alert.AlertMaker.showSimpleAlert;
+
 
 public class BookAddController {
     private DatabaseHandler handler;
@@ -115,10 +117,10 @@ public class BookAddController {
     private void handleEditOperation() {
         Book book = new Book(title.getText(), id.getText(), author.getText(), publisher.getText(), true);
         if (handler.updateBook(book)) {
-            AlertMaker.showSimpleAlert("Success", "Book Updated");
+            showSimpleAlert("Success", "Book Updated");
         }
         else {
-            AlertMaker.showErrorMessage("Failed", "Cant update book");
+            showErrorMessage("Failed", "Cant update book");
         }
     }
 }

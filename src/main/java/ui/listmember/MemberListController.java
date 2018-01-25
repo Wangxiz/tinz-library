@@ -14,12 +14,14 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import util.alert.AlertMaker;
 import database.DatabaseHandler;
 import ui.addbook.BookAddController;
 import ui.addmember.MemberAddController;
 import ui.main.MainController;
 import util.LibraryAssistantUtil;
+
+import static util.alert.AlertMaker.showSimpleAlert;
+import static util.alert.AlertMaker.showErrorMessage;
 
 import java.io.IOException;
 import java.sql.ResultSet;
@@ -83,11 +85,11 @@ public class MemberListController {
          //Fetch the selected row
         MemberListController.Member selectedForDeletion = tableView.getSelectionModel().getSelectedItem();
         if (selectedForDeletion == null) {
-            AlertMaker.showErrorMessage("No member selected", "Please select a member for deletion.");
+            showErrorMessage("No member selected", "Please select a member for deletion.");
             return;
         }
         if(DatabaseHandler.getInstance().isMemberHasAnyBooks(selectedForDeletion)) {
-            AlertMaker.showErrorMessage("Cant be deleted", "This member has some books.");
+            showErrorMessage("Cant be deleted", "This member has some books.");
             return;
         }
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
@@ -97,15 +99,15 @@ public class MemberListController {
         if (answer.isPresent() && answer.get() == ButtonType.OK) {
             Boolean result = DatabaseHandler.getInstance().deleteMember(selectedForDeletion);
             if (result) {
-                AlertMaker.showSimpleAlert("Book deleted", selectedForDeletion.getName()+ " was deleted successfully.");
+                showSimpleAlert("Book deleted", selectedForDeletion.getName()+ " was deleted successfully.");
                 list.remove(selectedForDeletion);
             }
             else {
-                AlertMaker.showSimpleAlert("Failed", selectedForDeletion.getName()+ " could not be deleted");
+                showSimpleAlert("Failed", selectedForDeletion.getName()+ " could not be deleted");
             }
         }
         else {
-            AlertMaker.showSimpleAlert("Deletion cancelled", "Deletion process cancelled");
+            showSimpleAlert("Deletion cancelled", "Deletion process cancelled");
         }
     }
 
@@ -120,7 +122,7 @@ public class MemberListController {
         //Fetch the selected row
         Member selectedForEdit = tableView.getSelectionModel().getSelectedItem();
         if (selectedForEdit == null) {
-            AlertMaker.showErrorMessage("No member selected", "Please select a member for edit.");
+            showErrorMessage("No member selected", "Please select a member for edit.");
             return;
         }
         try {

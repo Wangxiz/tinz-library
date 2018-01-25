@@ -3,9 +3,11 @@ package ui.addmember;
 import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
 import javafx.stage.Stage;
-import util.alert.AlertMaker;
 import database.DatabaseHandler;
 import ui.listmember.MemberListController;
+
+import static util.alert.AlertMaker.showSimpleAlert;
+import static util.alert.AlertMaker.showErrorMessage;
 
 public class MemberAddController {
     private DatabaseHandler handler;
@@ -40,7 +42,7 @@ public class MemberAddController {
 
         Boolean flag = mName.isEmpty() || mID.isEmpty() || mMobile.isEmpty() || mEmail.isEmpty();
         if (flag) {
-            AlertMaker.showErrorMessage("Cant process member", "Please Enter in all fields");
+            showErrorMessage("Cant process member", "Please Enter in all fields");
             return;
         }
         
@@ -60,10 +62,10 @@ public class MemberAddController {
         cancel();
 
         if (handler.execAction(st)) {
-            AlertMaker.showSimpleAlert("Member Added", "Saved");
+            showSimpleAlert("Member Added", "Saved");
         }
         else {
-            AlertMaker.showErrorMessage("Member cant be added", "Error Occurred");
+            showErrorMessage("Member cant be added", "Error Occurred");
         }
     }
     
@@ -80,9 +82,9 @@ public class MemberAddController {
     private void handleUpdateMember() {
         MemberListController.Member member = new MemberListController.Member(name.getText(), id.getText(), mobile.getText(), email.getText());
         if (DatabaseHandler.getInstance().updateMember(member)) {
-            AlertMaker.showSimpleAlert("Success", "Member Updated");
+            showSimpleAlert("Success", "Member Updated");
         } else {
-            AlertMaker.showErrorMessage("Failed", "Cant update member");
+            showErrorMessage("Failed", "Cant update member");
         }
     }
 }

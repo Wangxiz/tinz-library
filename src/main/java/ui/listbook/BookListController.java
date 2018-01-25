@@ -22,11 +22,13 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import util.alert.AlertMaker;
 import database.DatabaseHandler;
 import ui.addbook.BookAddController;
 import ui.main.MainController;
 import util.LibraryAssistantUtil;
+
+import static util.alert.AlertMaker.showErrorMessage;
+import static util.alert.AlertMaker.showSimpleAlert;
 
 public class BookListController {
     private ObservableList<Book> list = FXCollections.observableArrayList();
@@ -88,11 +90,11 @@ public class BookListController {
         //Fetch the selected row
         Book selectedForDeletion = tableView.getSelectionModel().getSelectedItem();
         if (selectedForDeletion == null) {
-            AlertMaker.showErrorMessage("No book selected", "Please select a book for deletion.");
+            showErrorMessage("No book selected", "Please select a book for deletion.");
             return;
         }
         if (DatabaseHandler.getInstance().isBookAlreadyIssued(selectedForDeletion)) {
-            AlertMaker.showErrorMessage("Cant be deleted", "This book is already issued and cant be deleted.");
+            showErrorMessage("Cant be deleted", "This book is already issued and cant be deleted.");
             return;
         }
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
@@ -102,13 +104,13 @@ public class BookListController {
         if (answer.isPresent() && answer.get() == ButtonType.OK) {
             Boolean result = DatabaseHandler.getInstance().deleteBook(selectedForDeletion);
             if (result) {
-                AlertMaker.showSimpleAlert("Book deleted", selectedForDeletion.getTitle() + " was deleted successfully.");
+                showSimpleAlert("Book deleted", selectedForDeletion.getTitle() + " was deleted successfully.");
                 list.remove(selectedForDeletion);
             } else {
-                AlertMaker.showSimpleAlert("Failed", selectedForDeletion.getTitle() + " could not be deleted");
+                showSimpleAlert("Failed", selectedForDeletion.getTitle() + " could not be deleted");
             }
         } else {
-            AlertMaker.showSimpleAlert("Deletion cancelled", "Deletion process cancelled");
+            showSimpleAlert("Deletion cancelled", "Deletion process cancelled");
         }
     }
 
@@ -117,7 +119,7 @@ public class BookListController {
         //Fetch the selected row
         Book selectedForEdit = tableView.getSelectionModel().getSelectedItem();
         if (selectedForEdit == null) {
-            AlertMaker.showErrorMessage("No book selected", "Please select a book for edit.");
+            showErrorMessage("No book selected", "Please select a book for edit.");
             return;
         }
         try {

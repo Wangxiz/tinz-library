@@ -20,8 +20,8 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import database.DatabaseHandler;
-import util.alert.AlertMaker;
 
+import static util.alert.AlertMaker.showMaterialDialog;
 import static util.LibraryAssistantUtil.loadWindow;
 
 import java.io.IOException;
@@ -195,7 +195,7 @@ public class MainController {
     private void loadIssueOperation() {
         if (checkForIssueValidity()) {
             JFXButton btn = new JFXButton("Okay!");
-            AlertMaker.showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(btn), "Invalid Input", null);
+            showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(btn), "Invalid Input", null);
             return;
         }
         if (bookStatus.getText().equals(BOOK_NOT_AVAILABLE)) {
@@ -207,7 +207,7 @@ public class MainController {
                 bookID.fireEvent(new ActionEvent());
                 mainTabPane.getSelectionModel().select(renewTab);
             });
-            AlertMaker.showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(btn, viewDetails), "Already issued book", "This book is already issued. Cant process issue request");
+            showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(btn, viewDetails), "Already issued book", "This book is already issued. Cant process issue request");
             return;
         }
 
@@ -224,21 +224,21 @@ public class MainController {
 
             if (databaseHandler.execAction(str) && databaseHandler.execAction(str2)) {
                 JFXButton button = new JFXButton("Done!");
-                AlertMaker.showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(button), "Book Issue Complete", null);
+                showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(button), "Book Issue Complete", null);
                 refreshGraphs();
             } else {
                 JFXButton button = new JFXButton("Okay.I'll Check");
-                AlertMaker.showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(button), "Issue Operation Failed", null);
+                showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(button), "Issue Operation Failed", null);
             }
             clearIssueEntries();
         });
         JFXButton noButton = new JFXButton("NO");
         noButton.addEventHandler(MouseEvent.MOUSE_CLICKED, (MouseEvent event1) -> {
             JFXButton button = new JFXButton("That's Okay");
-            AlertMaker.showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(button), "Issue Cancelled", null);
+            showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(button), "Issue Cancelled", null);
             clearIssueEntries();
         });
-        AlertMaker.showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(yesButton, noButton), "Confirm Issue", "Are you sure want to issue the book " + bookName.getText() + " to " + memberName.getText() + " ?");
+        showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(yesButton, noButton), "Confirm Issue", "Are you sure want to issue the book " + bookName.getText() + " to " + memberName.getText() + " ?");
     }
 
     @FXML
@@ -281,7 +281,7 @@ public class MainController {
                 submissionDataContainer.setOpacity(1);
             } else {
                 JFXButton button = new JFXButton("Okay.I'll Check");
-                AlertMaker.showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(button), "No such Book Exists in Issue Database", null);
+                showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(button), "No such Book Exists in Issue Database", null);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -293,7 +293,7 @@ public class MainController {
     private void loadSubmissionOp() {
         if (!isReadyForSubmission) {
             JFXButton btn = new JFXButton("Okay!");
-            AlertMaker.showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(btn), "Please select a book to submit", "Cant simply submit a null book :-)");
+            showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(btn), "Please select a book to submit", "Cant simply submit a null book :-)");
             return;
         }
 
@@ -305,29 +305,29 @@ public class MainController {
 
             if (databaseHandler.execAction(ac1) && databaseHandler.execAction(ac2)) {
                 JFXButton btn = new JFXButton("Done!");
-                AlertMaker.showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(btn), "Book has been submitted", null);
+                showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(btn), "Book has been submitted", null);
                 disableEnableControls(false);
                 submissionDataContainer.setOpacity(0);
             }
             else {
                 JFXButton btn = new JFXButton("Okay.I'll Check");
-                AlertMaker.showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(btn), "Submission Has Been Failed", null);
+                showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(btn), "Submission Has Been Failed", null);
             }
         });
         JFXButton noButton = new JFXButton("No, Cancel");
         noButton.addEventHandler(MouseEvent.MOUSE_CLICKED, (MouseEvent ev) -> {
             JFXButton btn = new JFXButton("Okay!");
-            AlertMaker.showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(btn), "Submission Operation cancelled", null);
+            showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(btn), "Submission Operation cancelled", null);
         });
 
-        AlertMaker.showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(yesButton, noButton), "Confirm Submission Operation", "Are you sure want to return the book ?");
+        showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(yesButton, noButton), "Confirm Submission Operation", "Are you sure want to return the book ?");
     }
 
     @FXML
     private void loadRenewOp() {
         if (!isReadyForSubmission) {
             JFXButton btn = new JFXButton("Okay!");
-            AlertMaker.showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(btn), "Please select a book to renew", null);
+            showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(btn), "Please select a book to renew", null);
             return;
         }
         JFXButton yesButton = new JFXButton("YES, Please");
@@ -336,21 +336,21 @@ public class MainController {
             System.out.println(ac);
             if (databaseHandler.execAction(ac)) {
                 JFXButton btn = new JFXButton("Alright!");
-                AlertMaker.showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(btn), "Book Has Been Renewed", null);
+                showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(btn), "Book Has Been Renewed", null);
                 disableEnableControls(false);
                 submissionDataContainer.setOpacity(0);
             }
             else {
                 JFXButton btn = new JFXButton("Okay!");
-                AlertMaker.showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(btn), "Renew Has Been Failed", null);
+                showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(btn), "Renew Has Been Failed", null);
             }
         });
         JFXButton noButton = new JFXButton("No, Don't!");
         noButton.addEventHandler(MouseEvent.MOUSE_CLICKED, (MouseEvent event1) -> {
             JFXButton btn = new JFXButton("Okay!");
-            AlertMaker.showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(btn), "Renew Operation cancelled", null);
+            showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(btn), "Renew Operation cancelled", null);
         });
-        AlertMaker.showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(yesButton, noButton), "Confirm Renew Operation", "Are you sure want to renew the book ?");
+        showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(yesButton, noButton), "Confirm Renew Operation", "Are you sure want to renew the book ?");
     }
 
     @FXML

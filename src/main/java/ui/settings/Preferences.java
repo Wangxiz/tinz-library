@@ -8,7 +8,10 @@ import java.io.IOException;
 import java.io.Writer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import util.alert.AlertMaker;
+
+import static util.alert.AlertMaker.showErrorMessage;
+import static util.alert.AlertMaker.showSimpleAlert;
+
 import org.apache.commons.codec.digest.DigestUtils;
 
 public class Preferences {
@@ -102,10 +105,10 @@ public class Preferences {
             writer = new FileWriter(CONFIG_FILE);
             gson.toJson(preference, writer);
 
-            AlertMaker.showSimpleAlert("Success", "Settings updated");
+            showSimpleAlert("Success", "Settings updated");
         } catch (IOException ex) {
             Logger.getLogger(Preferences.class.getName()).log(Level.SEVERE, null, ex);
-            AlertMaker.showErrorMessage(ex, "Failed", "Cant save configuration file");
+            showErrorMessage(ex, "Failed", "Cant save configuration file");
         } finally {
             try {
                 if (writer != null) {

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76a1b648-76c2-4072-89a0-7611360de3a8" name="Default" comment="">
+<<<<<<< Updated upstream
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/css/book_list.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/css/member_list.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Wangxiz.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Wangxiz.xml" />
@@ -14,6 +15,15 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/login/login.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/login/login.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/main/main.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/main/main.fxml" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/image/gc.png" afterPath="$PROJECT_DIR$/src/main/resources/icons/gc.png" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ui/addbook/BookAddController.java" afterPath="$PROJECT_DIR$/src/main/java/ui/addbook/BookAddController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ui/addmember/MemberAddController.java" afterPath="$PROJECT_DIR$/src/main/java/ui/addmember/MemberAddController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ui/listbook/BookListController.java" afterPath="$PROJECT_DIR$/src/main/java/ui/listbook/BookListController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ui/listmember/MemberListController.java" afterPath="$PROJECT_DIR$/src/main/java/ui/listmember/MemberListController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ui/main/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/ui/main/MainController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ui/settings/Preferences.java" afterPath="$PROJECT_DIR$/src/main/java/ui/settings/Preferences.java" />
+>>>>>>> Stashed changes
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,16 +47,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+<<<<<<< Updated upstream
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
               <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+=======
+      <file leaf-file-name="AlertMaker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/util/alert/AlertMaker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+>>>>>>> Stashed changes
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file leaf-file-name="main.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/main/main.fxml">
           <provider selected="true" editor-type-id="text-editor">
@@ -67,21 +86,55 @@
               <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+=======
+      <file leaf-file-name="BookListController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ui/listbook/BookListController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="30" column="52" lean-forward="false" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1516865580349" expanded="false" signature="5405:5416" ph=" { " />
+                <marker date="1516865580349" expanded="false" signature="5427:5433" ph=" }" />
+                <marker date="1516865580349" expanded="false" signature="6155:6170" ph=" { " />
+                <marker date="1516865580349" expanded="false" signature="6189:6199" ph=" }" />
+                <marker date="1516865580349" expanded="false" signature="6230:6245" ph=" { " />
+                <marker date="1516865580349" expanded="false" signature="6261:6271" ph=" }" />
+                <marker date="1516865580349" expanded="false" signature="6306:6321" ph=" { " />
+                <marker date="1516865580349" expanded="false" signature="6341:6351" ph=" }" />
+                <marker date="1516865580349" expanded="false" signature="6389:6404" ph=" { " />
+                <marker date="1516865580349" expanded="false" signature="6427:6437" ph=" }" />
+                <marker date="1516865580349" expanded="false" signature="6479:6494" ph=" { " />
+                <marker date="1516865580349" expanded="false" signature="6520:6530" ph=" }" />
+>>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file leaf-file-name="ToolbarController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ui/main/toolbar/ToolbarController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="418">
               <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
+=======
+      <file leaf-file-name="BookAddController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ui/addbook/BookAddController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding>
+                <element signature="e#882#883#0" expanded="true" />
+                <element signature="e#937#938#0" expanded="true" />
+              </folding>
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file leaf-file-name="login.fxml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/login/login.fxml">
           <provider selected="true" editor-type-id="text-editor">
@@ -100,11 +153,31 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2926">
               <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+=======
+      <file leaf-file-name="Preferences.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ui/settings/Preferences.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="63" lean-forward="false" selection-start-line="0" selection-start-column="63" selection-end-line="0" selection-end-column="63" />
+>>>>>>> Stashed changes
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ui/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -112,6 +185,18 @@
               <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+=======
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ui/main/MainController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <marker date="1516863812622" expanded="false" signature="13690:13701" ph=" { " />
+                <marker date="1516863812622" expanded="false" signature="13751:13757" ph=" }" />
+                <marker date="1516863812622" expanded="false" signature="14431:14442" ph=" { " />
+                <marker date="1516863812622" expanded="false" signature="14521:14527" ph=" }" />
+>>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
@@ -125,8 +210,18 @@
       <find>main.java.</find>
       <find>log</find>
       <find>derby.log</find>
+<<<<<<< Updated upstream
       <find>login</find>
+=======
+      <find>AlertMaker.showMaterialDialog</find>
+      <find>AlertMaker.showSimpleAlert</find>
+      <find>AlertMaker.</find>
+>>>>>>> Stashed changes
     </findStrings>
+    <replaceStrings>
+      <replace>showMaterialDialog</replace>
+      <replace>showSimpleAlert</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -139,6 +234,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< Updated upstream
+=======
+        <option value="$PROJECT_DIR$/src/library/assistant/settings/SettingsLoader.java" />
+        <option value="$PROJECT_DIR$/src/library/assistant/settings/SettingsController.java" />
+>>>>>>> Stashed changes
         <option value="$PROJECT_DIR$/src/library/assistant/ui/main/Main.java" />
         <option value="$PROJECT_DIR$/src/library/assistant/ui/addbook/LibraryAssistant.java" />
         <option value="$PROJECT_DIR$/src/library/assistant/util/LibraryAssistantUtil.java" />
@@ -159,8 +259,6 @@
         <option value="$PROJECT_DIR$/src/main/java/settings/SettingsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/settings/SettingsLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/ui/about/AboutController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ui/addbook/BookAddController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ui/addmember/MemberAddController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ui/login/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ui/main/main.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/ui/main/toolbar/toolbar.fxml" />
@@ -168,9 +266,7 @@
         <option value="$PROJECT_DIR$/src/main/java/ui/listmember/member_list.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/ui/main/toolbar/ToolbarController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ui/listmember/MemberListLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ui/listmember/MemberListController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ui/listbook/BookListLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ui/listbook/BookListController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/addmember/member_add.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/ui/addmember/MemberAddLoader.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/addbook/add_book.fxml" />
@@ -179,17 +275,25 @@
         <option value="$PROJECT_DIR$/src/main/java/alert/AlertMaker.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/settings/settings.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/ui/main/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ui/main/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/LibraryAssistantUtil.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/database/DatabaseHandler.java" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/src/main/resources/css/main.css" />
         <option value="$PROJECT_DIR$/src/main/resources/css/dark-theme.css" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/listbook/book_list.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/main/main.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/listmember/member_list.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/login/login.fxml" />
+=======
+        <option value="$PROJECT_DIR$/src/main/java/ui/main/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ui/settings/Preferences.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ui/addmember/MemberAddController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ui/listmember/MemberListController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ui/listbook/BookListController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ui/addbook/BookAddController.java" />
+>>>>>>> Stashed changes
       </list>
     </option>
   </component>
@@ -245,6 +349,8 @@
     <panes>
       <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -349,13 +455,23 @@
             </path>
             <path>
               <item name="Library-Assistant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library-Assistant" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library-Assistant" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< Updated upstream
       <pane id="PackagesPane" />
+=======
+>>>>>>> Stashed changes
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -551,22 +667,34 @@
       <workItem from="1516795494960" duration="1223000" />
       <workItem from="1516796757997" duration="9168000" />
       <workItem from="1516809918428" duration="2303000" />
+<<<<<<< Updated upstream
       <workItem from="1516843562785" duration="3107000" />
+=======
+      <workItem from="1516862913536" duration="2197000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="32799000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
+=======
+    <option name="totallyTimeSpent" value="31889000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
+>>>>>>> Stashed changes
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+<<<<<<< Updated upstream
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.335845" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -581,6 +709,23 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="PsiViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07942431" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30247578" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23347548" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> Stashed changes
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -588,7 +733,10 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+<<<<<<< Updated upstream
       <window_info id="PsiViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> Stashed changes
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -611,7 +759,77 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< Updated upstream
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/fxml/FXMLLoader.java" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/settings/SettingsLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/settings/SettingsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/derby.jar!/META-INF/NOTICE" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/login/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/main/main.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="41" lean-forward="true" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3398">
+          <caret line="3095" column="24" lean-forward="false" selection-start-line="3095" selection-start-column="24" selection-end-line="3095" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/main/toolbar/toolbar.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/login/login.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/listbook/BookListLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -637,6 +855,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/addmember/MemberAddController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
@@ -652,6 +871,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/icons/gc.png">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/resources/image/gc.png">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -673,12 +895,25 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/main/java/util/alert/AlertMaker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1063">
           <caret line="72" column="36" lean-forward="false" selection-start-line="72" selection-start-column="36" selection-end-line="72" selection-end-column="36" />
         </state>
       </provider>
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/settings/settings.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+>>>>>>> Stashed changes
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/addbook/LibraryAssistant.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -687,6 +922,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/scene/control/TableView.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/main/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -695,6 +931,12 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/scene/control/TableView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="354" column="13" lean-forward="false" selection-start-line="354" selection-start-column="13" selection-end-line="354" selection-end-column="13" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
@@ -706,6 +948,7 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
+<<<<<<< Updated upstream
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/listmember/MemberListController.java">
@@ -714,14 +957,47 @@
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
+=======
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/member_list.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/LibraryAssistantUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#487#488#0" expanded="false" />
+            <element signature="e#545#546#0" expanded="false" />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/listbook/BookListController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2375">
           <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/main/toolbar/ToolbarController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
@@ -734,6 +1010,29 @@
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+<<<<<<< Updated upstream
+=======
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/listmember/member_list.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/listbook/book_list.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+>>>>>>> Stashed changes
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/icons/add_book.png">
       <provider selected="true" editor-type-id="images">
@@ -800,6 +1099,7 @@
         <state />
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/settings/Preferences.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -817,6 +1117,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/derby.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="228">
@@ -864,6 +1166,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="188">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
@@ -930,12 +1233,95 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+=======
+        <state relative-caret-position="190">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/listmember/MemberListController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="53" lean-forward="true" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+          <folding>
+            <marker date="1516865442923" expanded="false" signature="4033:4048" ph=" { " />
+            <marker date="1516865442923" expanded="false" signature="4059:4065" ph=" }" />
+            <marker date="1516865442923" expanded="false" signature="5705:5720" ph=" { " />
+            <marker date="1516865442923" expanded="false" signature="5738:5748" ph=" }" />
+            <marker date="1516865442923" expanded="false" signature="5779:5794" ph=" { " />
+            <marker date="1516865442923" expanded="false" signature="5810:5820" ph=" }" />
+            <marker date="1516865442923" expanded="false" signature="5855:5870" ph=" { " />
+            <marker date="1516865442923" expanded="false" signature="5890:5900" ph=" }" />
+            <marker date="1516865442923" expanded="false" signature="5934:5949" ph=" { " />
+            <marker date="1516865442923" expanded="false" signature="5968:5978" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/addmember/MemberAddController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="64" column="53" lean-forward="true" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/listbook/BookListController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="30" column="52" lean-forward="false" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1516865580349" expanded="false" signature="5405:5416" ph=" { " />
+            <marker date="1516865580349" expanded="false" signature="5427:5433" ph=" }" />
+            <marker date="1516865580349" expanded="false" signature="6155:6170" ph=" { " />
+            <marker date="1516865580349" expanded="false" signature="6189:6199" ph=" }" />
+            <marker date="1516865580349" expanded="false" signature="6230:6245" ph=" { " />
+            <marker date="1516865580349" expanded="false" signature="6261:6271" ph=" }" />
+            <marker date="1516865580349" expanded="false" signature="6306:6321" ph=" { " />
+            <marker date="1516865580349" expanded="false" signature="6341:6351" ph=" }" />
+            <marker date="1516865580349" expanded="false" signature="6389:6404" ph=" { " />
+            <marker date="1516865580349" expanded="false" signature="6427:6437" ph=" }" />
+            <marker date="1516865580349" expanded="false" signature="6479:6494" ph=" { " />
+            <marker date="1516865580349" expanded="false" signature="6520:6530" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/addbook/BookAddController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/DatabaseHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+>>>>>>> Stashed changes
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1516812353349" expanded="true" signature="1959:2298" ph="CREATE TABLE... BOOK" />
+            <marker date="1516812353349" expanded="true" signature="2896:3170" ph="CREATE TABLE... MEMBER" />
+            <marker date="1516812353349" expanded="true" signature="3765:4237" ph="CREATE TABLE... ISSUE" />
+            <marker date="1516812353349" expanded="true" signature="5300:5329" ph="DELETE FROM " />
+            <marker date="1516812353349" expanded="true" signature="5833:5874" ph="SELECT COUNT... ISSUE" />
+            <marker date="1516812353349" expanded="true" signature="6467:6498" ph="DELETE FROM " />
+            <marker date="1516812353349" expanded="true" signature="7003:7046" ph="SELECT COUNT... ISSUE" />
+            <marker date="1516812353349" expanded="true" signature="7631:7688" ph="UPDATE BOOK " />
+            <marker date="1516812353349" expanded="true" signature="8285:8339" ph="UPDATE MEMBE... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/listmember/member_list.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -984,6 +1370,46 @@
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/alert/AlertMaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/main/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <marker date="1516863812622" expanded="false" signature="13690:13701" ph=" { " />
+            <marker date="1516863812622" expanded="false" signature="13751:13757" ph=" }" />
+            <marker date="1516863812622" expanded="false" signature="14431:14442" ph=" { " />
+            <marker date="1516863812622" expanded="false" signature="14521:14527" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/settings/Preferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="63" lean-forward="false" selection-start-line="0" selection-start-column="63" selection-end-line="0" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+>>>>>>> Stashed changes
     </entry>
   </component>
   <component name="masterDetails">
