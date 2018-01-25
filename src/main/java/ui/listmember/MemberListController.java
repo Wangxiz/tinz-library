@@ -18,8 +18,8 @@ import database.DatabaseHandler;
 import ui.addbook.BookAddController;
 import ui.addmember.MemberAddController;
 import ui.main.MainController;
-import util.LibraryAssistantUtil;
 
+import static util.LibraryAssistantUtil.setStageIcon;
 import static util.alert.AlertMaker.showSimpleAlert;
 import static util.alert.AlertMaker.showErrorMessage;
 
@@ -31,7 +31,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class MemberListController {
-
     private ObservableList<Member> list = FXCollections.observableArrayList();
 
     @FXML
@@ -133,10 +132,10 @@ public class MemberListController {
             controller.infalteUI(selectedForEdit);
             
             Stage stage = new Stage(StageStyle.DECORATED);
+            setStageIcon(stage);
             stage.setTitle("Edit Member");
             stage.setScene(new Scene(parent));
             stage.show();
-            LibraryAssistantUtil.setStageIcon(stage);
             
             stage.setOnCloseRequest((e)-> handleRefresh());
         } catch (IOException ex) {

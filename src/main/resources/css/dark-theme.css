@@ -35,7 +35,6 @@
 }
 
 .text-field {
-    /*-fx-text-fill: -fx-primarytext;*/
     -fx-font-size : 13pt;
     -jfx-focus-color: -fx-secondary;
     -fx-text-fill: derive(-fx-secondary, 20%);
@@ -155,4 +154,14 @@
 
 .column-center {
     -fx-alignment: center;
+}
+
+/* 这里是覆盖了默认的 error-label 样式，error-label 定义在 JFXTextFieldSkin.java 中  */
+.jfx-password-field .error-label, .jfx-text-field .error-label {
+    -fx-text-fill: #ff0000;
+    -fx-font-size: 10pt;
+}
+
+.jfx-password-field .error-icon, .jfx-text-field .error-icon {
+    -fx-text-fill: #ff0000;
 }

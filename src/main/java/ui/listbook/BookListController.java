@@ -19,22 +19,19 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import database.DatabaseHandler;
 import ui.addbook.BookAddController;
 import ui.main.MainController;
-import util.LibraryAssistantUtil;
 
+import static util.LibraryAssistantUtil.setStageIcon;
 import static util.alert.AlertMaker.showErrorMessage;
 import static util.alert.AlertMaker.showSimpleAlert;
 
 public class BookListController {
     private ObservableList<Book> list = FXCollections.observableArrayList();
 
-    @FXML
-    private AnchorPane rootPane;
     @FXML
     private TableView<Book> tableView;
     @FXML
@@ -130,10 +127,10 @@ public class BookListController {
             controller.inflateUI(selectedForEdit);
             
             Stage stage = new Stage(StageStyle.DECORATED);
+            setStageIcon(stage);
             stage.setTitle("Edit Book");
             stage.setScene(new Scene(parent));
             stage.show();
-            LibraryAssistantUtil.setStageIcon(stage);
             
             stage.setOnCloseRequest((e)-> handleRefresh());
         } catch (IOException ex) {

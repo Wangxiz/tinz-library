@@ -1,11 +1,15 @@
 package ui.addmember;
 
+import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
 import javafx.stage.Stage;
 import database.DatabaseHandler;
 import ui.listmember.MemberListController;
 
+import java.util.Arrays;
+
+import static util.alert.AlertMaker.showMaterialDialog;
 import static util.alert.AlertMaker.showSimpleAlert;
 import static util.alert.AlertMaker.showErrorMessage;
 
@@ -28,13 +32,13 @@ public class MemberAddController {
     }
 
     @FXML
-    private void cancel() {
+    private void handleCancel() {
         Stage stage = (Stage)name.getScene().getWindow();
         stage.close();
     }
 
     @FXML
-    private void addMember() {
+    private void handleSave() {
         String mName = name.getText();
         String mID = id.getText();
         String mMobile = mobile.getText();
@@ -47,7 +51,7 @@ public class MemberAddController {
         }
         
         if(isInEditMode) {
-            cancel();
+            handleCancel();
             handleUpdateMember();
             return;
         }
@@ -59,9 +63,11 @@ public class MemberAddController {
                 + "'" + mEmail + "'"
                 + ")";
         System.out.println(st);
-        cancel();
+        handleCancel();
 
         if (handler.execAction(st)) {
+//            JFXButton btn = new JFXButton("Okay!");
+//            showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(btn), "New member saved!", null);
             showSimpleAlert("Member Added", "Saved");
         }
         else {

@@ -45,6 +45,8 @@ public class MainController {
     private PieChart bookChart;
     private PieChart memberChart;
 
+    private Stage primaryStage;
+
     @FXML
     private HBox book_info;
     @FXML
@@ -107,6 +109,10 @@ public class MainController {
     private Tab renewTab;
     @FXML
     private JFXTabPane mainTabPane;
+
+    public void setPrimaryStage(Stage primaryStage) {
+        this.primaryStage = primaryStage;
+    }
 
     @FXML
     public void initialize() {

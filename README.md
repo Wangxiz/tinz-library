@@ -8,6 +8,9 @@ This is a library management software developed using JavaFX programming languag
 </a></p>
 
 - 使用 JFoenix Dialog
+- 修改图标
+- 登录界面在等待主界面时，显示等待圈圈
+- 使用 stage manager
 
 ## Bugs
 - \#01 当开启了 book list 等窗口，关闭主窗口时，不会退出程序
@@ -19,6 +22,8 @@ This is a library management software developed using JavaFX programming languag
 - Fixed bug\#02
 - 调整项目结构
 - 修改 CSS
+- 密码错误时，清空当前输入的密码
+- 登录界面增加验证器，并修改 error-label 的样式
 
 ### 2018-01-24
 - 去掉 Login 界面的标题栏

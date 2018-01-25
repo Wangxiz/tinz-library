@@ -22,16 +22,15 @@ public class LibraryAssistantUtil {
     public static void loadWindow(URL loc, String title, Stage parentStage) {
         try {
             Parent parent = FXMLLoader.load(loc);
+
             Stage stage;
-            if (parentStage != null) {
-                stage = parentStage;
-            } else {
-                stage = new Stage(StageStyle.DECORATED);
-            }
+            if (parentStage != null) stage = parentStage;
+            else stage = new Stage(StageStyle.DECORATED);
+
+            setStageIcon(stage);
             stage.setTitle(title);
             stage.setScene(new Scene(parent));
             stage.show();
-            setStageIcon(stage);
         } catch (IOException ex) {
             Logger.getLogger(MainController.class.getName()).log(Level.SEVERE, null, ex);
         }

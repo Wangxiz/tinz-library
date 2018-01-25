@@ -11,10 +11,10 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
-import util.LibraryAssistantUtil;
+
+import static util.LibraryAssistantUtil.setStageIcon;
 
 public class AboutController {
-
     private static final String LINKED_IN = "https://in.linkedin.com/in/muhammedafsalvillan";
     private static final String FACEBOOK = "http://facebook.com/afsalashyana";
     private static final String WEBSITE = "http://www.genuinecoder.com";
@@ -39,9 +39,9 @@ public class AboutController {
         Stage stage = new Stage();
         Scene scene = new Scene(new StackPane(browser));
         stage.setScene(scene);
+        setStageIcon(stage);
         stage.setTitle("Genuine Coder");
         stage.show();
-        LibraryAssistantUtil.setStageIcon(stage);
     }
 
     @FXML

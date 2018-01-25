@@ -25,7 +25,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>ui.main.Main</mainClass>
+                            <mainClass>ui.main.Login</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
