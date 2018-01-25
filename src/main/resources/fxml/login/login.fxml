@@ -19,8 +19,8 @@
             <Font size="17.0" />
          </font>
       </JFXPasswordField>
-      <JFXButton layoutX="106.0" layoutY="278.0" onAction="#handleLoginButtonAction" prefHeight="40.0" prefWidth="90.0" styleClass="login-button" text="Login" />
-      <JFXButton layoutX="239.0" layoutY="278.0" onAction="#handleCancelButtonAction" prefHeight="40.0" prefWidth="90.0" styleClass="login-button" text="Cancel" />
+      <JFXButton layoutX="106.0" layoutY="278.0" onAction="#handleLoginButtonAction" prefHeight="40.0" prefWidth="90.0" text="Login" />
+      <JFXButton layoutX="239.0" layoutY="278.0" onAction="#handleCancelButtonAction" prefHeight="40.0" prefWidth="90.0" text="Cancel" />
       <FontAwesomeIconView glyphName="LOCK" layoutX="200.0" layoutY="79.0" size="55" />
       <FontAwesomeIconView glyphName="USER" layoutX="64.0" layoutY="149.0" size="25" />
       <FontAwesomeIconView glyphName="KEY" layoutX="64.0" layoutY="224.0" size="25" />

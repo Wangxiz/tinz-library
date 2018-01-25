@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.net.URL?>
 <?import javafx.scene.control.ContextMenu?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="MemberAnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" stylesheets="/css/member_list.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.listmember.MemberListController">
+<AnchorPane id="MemberAnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="/css/dark-theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.listmember.MemberListController">
    <children>
       <TableView fx:id="tableView" prefHeight="400.0" prefWidth="600.0">
          <columns>
-            <TableColumn id="nameColumn" fx:id="nameCol" prefWidth="75.0" text="Name" />
-            <TableColumn id="memberIDColumn" fx:id="idCol" prefWidth="75.0" text="Member ID" />
-            <TableColumn id="mobileColumn" fx:id="mobileCol" prefWidth="75.0" text="Mobile" />
+            <TableColumn fx:id="nameCol" styleClass="column-center" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="idCol" styleClass="column-center" prefWidth="75.0" text="Member ID" />
+            <TableColumn fx:id="mobileCol" styleClass="column-center" prefWidth="75.0" text="Mobile" />
             <TableColumn fx:id="emailCol" prefWidth="75.0" text="Email" />
          </columns>
          <contextMenu>

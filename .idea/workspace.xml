@@ -2,61 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76a1b648-76c2-4072-89a0-7611360de3a8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/admin.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/dark-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/gc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/icon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/icon.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/css/book_list.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/css/member_list.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Wangxiz.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Wangxiz.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library-Assistant.iml" afterPath="$PROJECT_DIR$/Library-Assistant.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/alert/AlertMaker.java" afterPath="$PROJECT_DIR$/src/main/java/util/alert/AlertMaker.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/database/DatabaseHandler.java" afterPath="$PROJECT_DIR$/src/main/java/database/DatabaseHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/settings/Preferences.java" afterPath="$PROJECT_DIR$/src/main/java/ui/settings/Preferences.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/settings/SettingsController.java" afterPath="$PROJECT_DIR$/src/main/java/ui/settings/SettingsController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/settings/SettingsLoader.java" afterPath="$PROJECT_DIR$/src/main/java/ui/settings/SettingsLoader.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/settings/settings.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/settings/settings.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/about/AboutController.java" afterPath="$PROJECT_DIR$/src/main/java/ui/about/AboutController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/about/about.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/about/about.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/addbook/BookAddController.java" afterPath="$PROJECT_DIR$/src/main/java/ui/addbook/BookAddController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/addbook/LibraryAssistant.java" afterPath="$PROJECT_DIR$/src/main/java/ui/addbook/LibraryAssistant.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/addbook/add_book.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/addbook/add_book.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/addmember/MemberAddController.java" afterPath="$PROJECT_DIR$/src/main/java/ui/addmember/MemberAddController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/addmember/MemberAddLoader.java" afterPath="$PROJECT_DIR$/src/main/java/ui/addmember/MemberAddLoader.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/addmember/member_add.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/addmember/member_add.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/icons/add_book.png" afterPath="$PROJECT_DIR$/src/main/resources/icons/add_book.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/icons/add_mem.png" afterPath="$PROJECT_DIR$/src/main/resources/icons/add_mem.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/icons/book_1.png" afterPath="$PROJECT_DIR$/src/main/resources/icons/book_1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/icons/book_2.png" afterPath="$PROJECT_DIR$/src/main/resources/icons/book_2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/icons/issue.png" afterPath="$PROJECT_DIR$/src/main/resources/icons/issue.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/icons/issued.png" afterPath="$PROJECT_DIR$/src/main/resources/icons/issued.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/icons/list_book.png" afterPath="$PROJECT_DIR$/src/main/resources/icons/list_book.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/icons/list_mem.png" afterPath="$PROJECT_DIR$/src/main/resources/icons/list_mem.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/icons/member.png" afterPath="$PROJECT_DIR$/src/main/resources/icons/member.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/icons/renew.png" afterPath="$PROJECT_DIR$/src/main/resources/icons/renew.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/icons/return.png" afterPath="$PROJECT_DIR$/src/main/resources/icons/return.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/icons/search.png" afterPath="$PROJECT_DIR$/src/main/resources/icons/search.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/icons/settings.png" afterPath="$PROJECT_DIR$/src/main/resources/icons/settings.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/listbook/BookListController.java" afterPath="$PROJECT_DIR$/src/main/java/ui/listbook/BookListController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/listbook/BookListLoader.java" afterPath="$PROJECT_DIR$/src/main/java/ui/listbook/BookListLoader.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/listbook/book_list.css" afterPath="$PROJECT_DIR$/src/main/resources/css/book_list.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/listbook/book_list.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/listbook/book_list.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/listmember/MemberListController.java" afterPath="$PROJECT_DIR$/src/main/java/ui/listmember/MemberListController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/listmember/MemberListLoader.java" afterPath="$PROJECT_DIR$/src/main/java/ui/listmember/MemberListLoader.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/listmember/member_list.css" afterPath="$PROJECT_DIR$/src/main/resources/css/member_list.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/listmember/member_list.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/listmember/member_list.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/login/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/ui/login/LoginController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/login/login.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/login/login.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/main/Main.java" afterPath="$PROJECT_DIR$/src/main/java/ui/main/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/main/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/ui/main/MainController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/main/main.css" afterPath="$PROJECT_DIR$/src/main/resources/css/main.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/main/main.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/main/main.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/main/toolbar/ToolbarController.java" afterPath="$PROJECT_DIR$/src/main/java/ui/main/toolbar/ToolbarController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/ui/main/toolbar/toolbar.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/main/toolbar/toolbar.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/library/assistant/util/LibraryAssistantUtil.java" afterPath="$PROJECT_DIR$/src/main/java/util/LibraryAssistantUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/css/dark-theme.css" afterPath="$PROJECT_DIR$/src/main/resources/css/dark-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/css/main.css" afterPath="$PROJECT_DIR$/src/main/resources/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/about/about.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/about/about.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/listbook/book_list.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/listbook/book_list.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/listmember/member_list.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/listmember/member_list.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/login/login.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/login/login.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/main/main.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/main/main.fxml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/image/gc.png" afterPath="$PROJECT_DIR$/src/main/resources/icons/gc.png" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -79,7 +36,88 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/main/main.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="254" column="23" lean-forward="false" selection-start-line="254" selection-start-column="23" selection-end-line="254" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LibraryAssistantUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/util/LibraryAssistantUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ToolbarController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ui/main/toolbar/ToolbarController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.fxml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/login/login.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dark-theme.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/css/dark-theme.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2926">
+              <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ui/main/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -87,6 +125,7 @@
       <find>main.java.</find>
       <find>log</find>
       <find>derby.log</find>
+      <find>login</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -100,9 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/library/assistant/alert/AlertMaker.java" />
-        <option value="$PROJECT_DIR$/src/library/assistant/settings/SettingsLoader.java" />
-        <option value="$PROJECT_DIR$/src/library/assistant/settings/SettingsController.java" />
         <option value="$PROJECT_DIR$/src/library/assistant/ui/main/Main.java" />
         <option value="$PROJECT_DIR$/src/library/assistant/ui/addbook/LibraryAssistant.java" />
         <option value="$PROJECT_DIR$/src/library/assistant/util/LibraryAssistantUtil.java" />
@@ -145,12 +181,15 @@
         <option value="$PROJECT_DIR$/src/main/java/ui/main/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/ui/main/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/LibraryAssistantUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/css/main.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/listmember/member_list.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/listbook/book_list.fxml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/database/DatabaseHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/css/main.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/css/dark-theme.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/listbook/book_list.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/main/main.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/listmember/member_list.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/login/login.fxml" />
       </list>
     </option>
   </component>
@@ -204,6 +243,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -236,7 +276,76 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library-Assistant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library-Assistant" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library-Assistant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library-Assistant" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library-Assistant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library-Assistant" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library-Assistant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library-Assistant" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="fxml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library-Assistant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library-Assistant" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="fxml" type="462c0819:PsiDirectoryNode" />
+              <item name="listmember" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library-Assistant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library-Assistant" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="fxml" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library-Assistant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library-Assistant" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="fxml" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library-Assistant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library-Assistant" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="fxml" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="toolbar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Library-Assistant" type="b2602c69:ProjectViewProjectNode" />
@@ -246,9 +355,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -274,11 +382,11 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Codes\Library-Assistant\src\main\resources\icons" />
       <recent name="D:\Study\Codes\Library-Assistant\src\main\resources\icons" />
       <recent name="D:\Study\Codes\Library-Assistant\src\main\resources\fxml\settings" />
       <recent name="D:\Study\Codes\Library-Assistant\src\main\resources\image" />
       <recent name="D:\Study\Codes\Library-Assistant\src\main\resources\fxml\about" />
-      <recent name="D:\Study\Codes\Library-Assistant\src\main\resources\fxml\addbook" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -443,43 +551,45 @@
       <workItem from="1516795494960" duration="1223000" />
       <workItem from="1516796757997" duration="9168000" />
       <workItem from="1516809918428" duration="2303000" />
+      <workItem from="1516843562785" duration="3107000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29692000" />
+    <option name="totallyTimeSpent" value="32799000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="22" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="PsiViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07942511" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30307943" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.335845" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39612487" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23373677" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23614073" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="PsiViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,83 +611,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/icons/icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ui/settings/SettingsLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ui/settings/SettingsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1516804137658" expanded="false" signature="470:476" ph=" }" />
-            <marker date="1516804137658" expanded="false" signature="1230:1236" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/derby.jar!/META-INF/NOTICE" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ui/login/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/main/main.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="41" lean-forward="true" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3398">
-          <caret line="3095" column="24" lean-forward="false" selection-start-line="3095" selection-start-column="24" selection-end-line="3095" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/main/toolbar/toolbar.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/login/login.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/fxml/FXMLLoader.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/listbook/BookListLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -607,7 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -615,25 +648,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="498">
           <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/image/gc.png">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/icons/gc.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/about/about.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/about/AboutController.java">
@@ -650,17 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/settings/settings.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/addbook/LibraryAssistant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -668,13 +687,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/scene/control/TableView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="354" column="13" lean-forward="false" selection-start-line="354" selection-start-column="13" selection-end-line="354" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/scene/control/TableView.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/main/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="779">
@@ -686,27 +699,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/addbook/add_book.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/css/member_list.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/listmember/MemberListController.java">
@@ -719,63 +718,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/LibraryAssistantUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ui/main/toolbar/ToolbarController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/listbook/BookListController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2375">
           <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/addmember/member_add.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="123" lean-forward="false" selection-start-line="9" selection-start-column="90" selection-end-line="9" selection-end-column="123" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/listmember/member_list.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/listbook/book_list.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/icons/add_book.png">
@@ -847,9 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="57" column="37" lean-forward="true" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -858,16 +812,7 @@
         <state relative-caret-position="-3883">
           <caret line="72" column="9" lean-forward="false" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1516812171013" expanded="true" signature="1959:2298" ph="CREATE TABLE... BOOK" />
-            <marker date="1516812171013" expanded="true" signature="2896:3170" ph="CREATE TABLE... MEMBER" />
-            <marker date="1516812171013" expanded="true" signature="3765:4237" ph="CREATE TABLE... ISSUE" />
-            <marker date="1516812171013" expanded="true" signature="5300:5329" ph="DELETE FROM " />
-            <marker date="1516812171013" expanded="true" signature="5833:5874" ph="SELECT COUNT... ISSUE" />
-            <marker date="1516812171013" expanded="true" signature="6467:6498" ph="DELETE FROM " />
-            <marker date="1516812171013" expanded="true" signature="7003:7046" ph="SELECT COUNT... ISSUE" />
-            <marker date="1516812171013" expanded="true" signature="7631:7688" ph="UPDATE BOOK " />
-            <marker date="1516812171013" expanded="true" signature="8285:8339" ph="UPDATE MEMBE... " />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -879,35 +824,165 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="n#build#0;n#project#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="285">
             <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/book_list.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/member_list.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/listbook/book_list.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="85" lean-forward="false" selection-start-line="8" selection-start-column="85" selection-end-line="8" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="188">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/settings/settings.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/main/toolbar/toolbar.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/jfoenix.jar!/css/jfoenix-fonts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/jfoenix.jar!/css/jfoenix-design.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="52" column="24" lean-forward="true" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/jfoenix.jar!/com/jfoenix/converters/ButtonTypeConverter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/LibraryAssistantUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/listmember/member_list.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/main/toolbar/ToolbarController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/main/main.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="254" column="23" lean-forward="false" selection-start-line="254" selection-start-column="23" selection-end-line="254" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/dark-theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2926">
+          <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/login/login.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
   </component>

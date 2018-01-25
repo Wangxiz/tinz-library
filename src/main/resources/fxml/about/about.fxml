@@ -12,7 +12,7 @@
    <children>
       <ImageView fitHeight="154.0" fitWidth="247.0" layoutX="-12.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="/image/gc.png" />
+            <Image url="/icons/gc.png" />
          </image>
       </ImageView>
       <Text fontSmoothingType="LCD" layoutX="87.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="about-text" text="Built with love and couple of lines of code" textAlignment="CENTER">

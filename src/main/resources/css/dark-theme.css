@@ -35,22 +35,21 @@
 }
 
 .text-field {
-    -fx-text-fill: -fx-primarytext;
+    /*-fx-text-fill: -fx-primarytext;*/
     -fx-font-size : 13pt;
     -jfx-focus-color: -fx-secondary;
     -fx-text-fill: derive(-fx-secondary, 20%);
 }
 
+
 /*Login Screen Specific*/
-
-
 .wrong-credentials {
     -jfx-unfocus-color: -fx-red;
     -jfx-focus-color: -fx-red;
 }
 
-/*Main Screen CSS Styling starts here*/
 
+/* Main Screen CSS Styling starts here */
 /* Tab Pane styling */
 .tab {
     -fx-background-color: -fx-primary;
@@ -84,10 +83,10 @@
 
 /*Toolbar buttons*/
 .toolbar-button {
-    -fx-background-color: derive(-fx-primary, 20%);
+    /*-fx-background-color: derive(-fx-primary, 20%);*/
     -fx-background-radius: 0px;
     -fx-border-radius: 0px;
-    /*-fx-background-color: -fx-primary;*/
+    -fx-background-color: -fx-primary;
 }
 
 .toolbar-button:hover {
@@ -110,7 +109,7 @@
     -fx-background-color: derive(-fx-primary, 10%);
 }
 
-/*Dialog styling*/
+/* Dialog styling */
 .dialog-button {
     -fx-background-color: -fx-blue;
     -fx-border-color: -fx-blue;
@@ -152,4 +151,8 @@
 /*Custom window background*/
 .custom-pane {
     -fx-background-color: derive(-fx-primary, 5%);
+}
+
+.column-center {
+    -fx-alignment: center;
 }
