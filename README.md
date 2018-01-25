@@ -11,17 +11,22 @@ This is a library management software developed using JavaFX programming languag
 
 ## Bugs
 - \#01 当开启了 book list 等窗口，关闭主窗口时，不会退出程序
-- \#02 member list 不能正常放大缩小
+- \#02 ~~member list 不能正常放大缩小~~ **Fixed!**
 - \#03 ~~菜单栏中 View->Member 不是弹出列表窗口，而是新建 member窗口~~ **Fixed!**
 
 ## Releases
+### 2018-01-25
+- Fixed bug\#02
+- 调整项目结构
+- 修改 CSS
+
 ### 2018-01-24
 - 去掉 Login 界面的标题栏
 - 更新代码风格
 - add_book add_member 确认时退出添加界面
 - Login 界面始终置于最上层
 - edit_book edit_member 确认时退出编辑界面
-- fixed bug\#03
+- Fixed bug\#03
 - 使用 Maven
 
 ## Libraries Used

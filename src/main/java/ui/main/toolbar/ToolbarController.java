@@ -5,8 +5,6 @@ import javafx.fxml.FXML;
 import static util.LibraryAssistantUtil.loadWindow;
 
 public class ToolbarController {
-
-
     @FXML
     public void initialize() {}
 

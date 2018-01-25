@@ -15,7 +15,7 @@ import static util.alert.AlertMaker.showSimpleAlert;
 import org.apache.commons.codec.digest.DigestUtils;
 
 public class Preferences {
-    private static final String CONFIG_FILE = "config.txt";
+    private static final String CONFIG_FILE = "src/main/resources/configs/config.txt";
 
     private int nDaysWithoutFine;
     private float finePerDay;
