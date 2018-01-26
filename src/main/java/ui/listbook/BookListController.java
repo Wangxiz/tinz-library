@@ -6,6 +6,8 @@ import java.sql.SQLException;
 import java.util.Optional;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import com.jfoenix.controls.JFXSnackbar;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
@@ -25,6 +27,7 @@ import database.DatabaseHandler;
 import ui.addbook.BookAddController;
 import ui.main.MainController;
 
+import static util.Constant.snackbar;
 import static util.LibraryAssistantUtil.setStageIcon;
 import static util.alert.AlertMaker.showErrorMessage;
 import static util.alert.AlertMaker.showSimpleAlert;
@@ -60,6 +63,7 @@ public class BookListController {
     }
 
     private void loadData() {
+        System.out.println("loadData");
         list.clear();
         
         DatabaseHandler handler = DatabaseHandler.getInstance();
@@ -80,6 +84,7 @@ public class BookListController {
         }
 
         tableView.setItems(list);
+        System.out.println("loadDataEnd");
     }
 
     @FXML
@@ -96,18 +101,18 @@ public class BookListController {
         }
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Deleting book");
-        alert.setContentText("Are you sure want to delete the book " + selectedForDeletion.getTitle() + " ?");
+        alert.setContentText("Are you sure want to delete the book '" + selectedForDeletion.getTitle() + "' ?");
         Optional<ButtonType> answer = alert.showAndWait();
         if (answer.isPresent() && answer.get() == ButtonType.OK) {
             Boolean result = DatabaseHandler.getInstance().deleteBook(selectedForDeletion);
             if (result) {
-                showSimpleAlert("Book deleted", selectedForDeletion.getTitle() + " was deleted successfully.");
+                snackbar.fireEvent(new JFXSnackbar.SnackbarEvent("《" + selectedForDeletion.getTitle() + "》 was deleted successfully."));
                 list.remove(selectedForDeletion);
             } else {
                 showSimpleAlert("Failed", selectedForDeletion.getTitle() + " could not be deleted");
             }
         } else {
-            showSimpleAlert("Deletion cancelled", "Deletion process cancelled");
+            snackbar.fireEvent(new JFXSnackbar.SnackbarEvent("Deletion process cancelled"));
         }
     }
 
@@ -132,7 +137,7 @@ public class BookListController {
             stage.setScene(new Scene(parent));
             stage.show();
             
-            stage.setOnCloseRequest((e)-> handleRefresh());
+            stage.setOnCloseRequest((e) -> handleRefresh());
         } catch (IOException ex) {
             Logger.getLogger(MainController.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -140,6 +145,7 @@ public class BookListController {
 
     @FXML
     private void handleRefresh() {
+        System.out.println("handleRefresh");
         loadData();
     }
 

@@ -18,11 +18,15 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import database.DatabaseHandler;
+import javafx.stage.StageStyle;
+import util.Constant;
 
 import static util.alert.AlertMaker.showMaterialDialog;
 import static util.LibraryAssistantUtil.loadWindow;
+import static util.Constant.mainStage;
 
 import java.io.IOException;
 import java.sql.ResultSet;
@@ -46,6 +50,7 @@ public class MainController {
     private PieChart memberChart;
 
     private Stage primaryStage;
+    private JFXSnackbar snackbar;
 
     @FXML
     private HBox book_info;
@@ -110,12 +115,20 @@ public class MainController {
     @FXML
     private JFXTabPane mainTabPane;
 
+    private JFXPopup popup;
+
     public void setPrimaryStage(Stage primaryStage) {
         this.primaryStage = primaryStage;
     }
 
     @FXML
     public void initialize() {
+        try {
+            popup = new JFXPopup(FXMLLoader.load(getClass().getResource("/fxml/about/DemoPopup.fxml")));
+        } catch (IOException ioExc) {
+            ioExc.printStackTrace();
+        }
+
         JFXDepthManager.setDepth(book_info, 1);
         JFXDepthManager.setDepth(member_info, 1);
 
@@ -123,6 +136,11 @@ public class MainController {
 
         initDrawer();
         initGraphs();
+
+        snackbar = new JFXSnackbar(rootPane);
+        snackbar.setPrefWidth(300);
+        snackbar.setStyle("-fx-text-fill: #FFFF8D");
+        Constant.snackbar = snackbar;
     }
 
     @FXML
@@ -366,27 +384,28 @@ public class MainController {
 
     @FXML
     private void handleMenuAddBook() {
-        loadWindow(getClass().getResource("/fxml/addbook/add_book.fxml"), "Add New Book", null);
+        loadWindow(getClass().getResource("/fxml/addbook/add_book.fxml"), "Add New Book", mainStage, Modality.WINDOW_MODAL);
     }
 
     @FXML
     private void handleMenuAddMember() {
-        loadWindow(getClass().getResource("/fxml/addmember/member_add.fxml"), "Add New Member", null);
+        loadWindow(getClass().getResource("/fxml/addmember/member_add.fxml"), "Add New Member", mainStage, Modality.WINDOW_MODAL);
     }
 
     @FXML
     private void handleMenuViewBook() {
-        loadWindow(getClass().getResource("/fxml/listbook/book_list.fxml"), "Book List", null);
+        loadWindow(getClass().getResource("/fxml/listbook/book_list.fxml"), "Book List", mainStage, Modality.WINDOW_MODAL);
     }
 
     @FXML
     private void handleMenuViewMember() {
-        loadWindow(getClass().getResource("/fxml/listmember/member_list.fxml"), "Member List", null);
+        loadWindow(getClass().getResource("/fxml/listmember/member_list.fxml"), "Member List", mainStage, Modality.WINDOW_MODAL);
     }
 
     @FXML
     private void handleAboutMenu() {
-        loadWindow(getClass().getResource("/fxml/about/about.fxml"), "About Me", null);
+//        loadWindow(getClass().getResource("/fxml/about/about.fxml"), "About Me", mainStage, StageStyle.TRANSPARENT);
+        popup.show(mainStage, 100, 100);
     }
 
     @FXML

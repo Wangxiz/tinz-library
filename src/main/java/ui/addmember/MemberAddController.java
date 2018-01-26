@@ -1,16 +1,14 @@
 package ui.addmember;
 
-import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXSnackbar;
 import com.jfoenix.controls.JFXTextField;
+import database.DatabaseHandler;
 import javafx.fxml.FXML;
 import javafx.stage.Stage;
-import database.DatabaseHandler;
+import javafx.stage.WindowEvent;
 import ui.listmember.MemberListController;
 
-import java.util.Arrays;
-
-import static util.alert.AlertMaker.showMaterialDialog;
-import static util.alert.AlertMaker.showSimpleAlert;
+import static util.Constant.snackbar;
 import static util.alert.AlertMaker.showErrorMessage;
 
 public class MemberAddController {
@@ -34,6 +32,7 @@ public class MemberAddController {
     @FXML
     private void handleCancel() {
         Stage stage = (Stage)name.getScene().getWindow();
+        stage.fireEvent(new WindowEvent(stage, WindowEvent.WINDOW_CLOSE_REQUEST));
         stage.close();
     }
 
@@ -51,8 +50,8 @@ public class MemberAddController {
         }
         
         if(isInEditMode) {
-            handleCancel();
             handleUpdateMember();
+            handleCancel();
             return;
         }
         
@@ -66,9 +65,7 @@ public class MemberAddController {
         handleCancel();
 
         if (handler.execAction(st)) {
-//            JFXButton btn = new JFXButton("Okay!");
-//            showMaterialDialog(rootPane, rootAnchorPane, Arrays.asList(btn), "New member saved!", null);
-            showSimpleAlert("Member Added", "Saved");
+            snackbar.fireEvent(new JFXSnackbar.SnackbarEvent("Successfully add a new member"));
         }
         else {
             showErrorMessage("Member cant be added", "Error Occurred");
@@ -88,7 +85,7 @@ public class MemberAddController {
     private void handleUpdateMember() {
         MemberListController.Member member = new MemberListController.Member(name.getText(), id.getText(), mobile.getText(), email.getText());
         if (DatabaseHandler.getInstance().updateMember(member)) {
-            showSimpleAlert("Success", "Member Updated");
+            snackbar.fireEvent(new JFXSnackbar.SnackbarEvent("Member updated"));
         } else {
             showErrorMessage("Failed", "Cant update member");
         }

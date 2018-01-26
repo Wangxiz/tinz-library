@@ -1,5 +1,7 @@
 package ui.addbook;
 
+import com.jfoenix.controls.JFXHamburger;
+import com.jfoenix.controls.JFXSnackbar;
 import com.jfoenix.controls.JFXTextField;
 
 import java.sql.ResultSet;
@@ -13,10 +15,11 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import database.DatabaseHandler;
+import javafx.stage.WindowEvent;
 
+import static util.Constant.snackbar;
 import static ui.listbook.BookListController.Book;
 import static util.alert.AlertMaker.showErrorMessage;
-import static util.alert.AlertMaker.showSimpleAlert;
 
 
 public class BookAddController {
@@ -40,7 +43,14 @@ public class BookAddController {
     }
 
     @FXML
-    private void addBook() {
+    private void handleCancel() {
+        Stage stage = (Stage) rootPane.getScene().getWindow();
+        stage.fireEvent(new WindowEvent(stage, WindowEvent.WINDOW_CLOSE_REQUEST));
+        stage.close();
+    }
+
+    @FXML
+    private void handleSave() {
         String bookID = id.getText();
         String bookAuthor = author.getText();
         String bookName = title.getText();
@@ -55,8 +65,8 @@ public class BookAddController {
         }
 
         if (isInEditMode) {
-            cancel();
             handleEditOperation();
+            handleCancel();
             return;
         }
 
@@ -68,13 +78,10 @@ public class BookAddController {
                 + "" + "true" + ""
                 + ")";
         System.out.println(qu);
-        cancel();
+        handleCancel();
 
         if (handler.execAction(qu)) {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setHeaderText(null);
-            alert.setContentText("Success");
-            alert.showAndWait();
+            snackbar.fireEvent(new JFXSnackbar.SnackbarEvent("Successfully add a new book"));
         }
         else {
             Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -82,12 +89,6 @@ public class BookAddController {
             alert.setContentText("Failed");
             alert.showAndWait();
         }
-    }
-
-    @FXML
-    private void cancel() {
-        Stage stage = (Stage) rootPane.getScene().getWindow();
-        stage.close();
     }
 
     private void checkData() {
@@ -117,7 +118,7 @@ public class BookAddController {
     private void handleEditOperation() {
         Book book = new Book(title.getText(), id.getText(), author.getText(), publisher.getText(), true);
         if (handler.updateBook(book)) {
-            showSimpleAlert("Success", "Book Updated");
+            snackbar.fireEvent(new JFXSnackbar.SnackbarEvent("Book updated"));
         }
         else {
             showErrorMessage("Failed", "Cant update book");

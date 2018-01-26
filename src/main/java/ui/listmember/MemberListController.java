@@ -1,5 +1,6 @@
 package ui.listmember;
 
+import com.jfoenix.controls.JFXSnackbar;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -19,6 +20,7 @@ import ui.addbook.BookAddController;
 import ui.addmember.MemberAddController;
 import ui.main.MainController;
 
+import static util.Constant.snackbar;
 import static util.LibraryAssistantUtil.setStageIcon;
 import static util.alert.AlertMaker.showSimpleAlert;
 import static util.alert.AlertMaker.showErrorMessage;
@@ -98,7 +100,7 @@ public class MemberListController {
         if (answer.isPresent() && answer.get() == ButtonType.OK) {
             Boolean result = DatabaseHandler.getInstance().deleteMember(selectedForDeletion);
             if (result) {
-                showSimpleAlert("Book deleted", selectedForDeletion.getName()+ " was deleted successfully.");
+                snackbar.fireEvent(new JFXSnackbar.SnackbarEvent("'" + selectedForDeletion.getName()+ "' was deleted successfully."));
                 list.remove(selectedForDeletion);
             }
             else {
@@ -106,7 +108,7 @@ public class MemberListController {
             }
         }
         else {
-            showSimpleAlert("Deletion cancelled", "Deletion process cancelled");
+            snackbar.fireEvent(new JFXSnackbar.SnackbarEvent("Deletion process cancelled"));
         }
     }
 

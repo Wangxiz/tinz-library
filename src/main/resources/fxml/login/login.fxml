@@ -24,7 +24,7 @@
               <!--<Font size="17.0" />-->
           <!--</font>-->
           <validators>
-              <RequiredFieldValidator message="Input Required!" style="-fx-text-fill: #FFFF8D;">
+              <RequiredFieldValidator message="Incorrect password! Please try again" style="-fx-text-fill: #FFFF8D;">
                   <FontAwesomeIconView glyphName="WARNING" style="-fx-font-family: FontAwesome;" />
               </RequiredFieldValidator>
 

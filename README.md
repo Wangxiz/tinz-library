@@ -2,26 +2,33 @@
 This is a library management software developed using JavaFX programming language. The entire development video with explanation of each and every part (in real time) is available in my YouTube Channel [Genuine Coder Youtube Channel](https://www.youtube.com/playlist?list=PLhs1urmduZ29jTcE1ca8Z6bZNvH_39ayL).
 
 ## TODOs
-- 将完成操作后的提醒换为下面这种
-<p><a>
-<img src="https://goo.gl/Ez1Eeq" alt="Alt text" title="Masonry Demo" style="max-width:100%;">
-</a></p>
-
+- 使用 snackBar
 - 使用 JFoenix Dialog
 - 修改图标
 - 登录界面在等待主界面时，显示等待圈圈
 - 使用 stage manager
+- 添加多用户支持
 
 ## Bugs
 - \#01 ~~当开启了 book list 等窗口，关闭主窗口时，不会退出程序~~ **Fixed!**
 - \#02 ~~member list 不能正常放大缩小~~ **Fixed!**
 - \#03 ~~菜单栏中 View->Member 不是弹出列表窗口，而是新建 member窗口~~ **Fixed!**
 - \#04 ~~当开始输入的时候即检测有输入，即时去掉 input request 的错误提示~~ **Fixed!**
+- \#05 ~~编辑 book 和 member 信息后不会自动更新~~ **Fixed!**
 
 ## Releases
 ### 2018-01-26
-- Fixed bug\#03, 为 `mainStage` 添加 `setOnCloseRequest` 响应事件
+- Fixed bug\#01, 为 `mainStage` 添加 `setOnCloseRequest` 响应事件
 - Fixed bug\#04, 将 `focusedProperty().addListener` 响应事件改为 `textProperty().addListener`
+- 使用 `SnackBar` 展示添加 book 和 member 成功的消息
+- 修改 `SnackBar` 的 css
+- Fixed bug\#01, 重新实现：将 mainStage 设置为其他窗口的 owner
+- 重新实现 `loadWindow`
+- 使用 `SnackBar` 展示编辑 book 和 member 成功的消息
+- 使用 `SnackBar` 展示删除 book 和 member 成功的消息
+- 使用 `SnackBar` 展示编辑 settings 成功的消息
+- Fixed bug\#05, 在(编辑)窗口关闭前触发 `WindowEvent.WINDOW_CLOSE_REQUEST` 事件
+- 使用 `Modality.WINDOW_MODAL` 设置弹出子窗口时，父窗口不能响应
 
 ### 2018-01-25
 - Fixed bug\#02, 为 `member list` 添加四个 Anchor

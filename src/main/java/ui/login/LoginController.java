@@ -2,27 +2,23 @@ package ui.login;
 
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+import ui.main.MainController;
+import ui.settings.Preferences;
+import util.Constant;
 
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-//import javafx.event.EventHandler;
-//import javafx.scene.input.MouseEvent;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-import javafx.stage.StageStyle;
-import ui.main.MainController;
-import ui.settings.Preferences;
-
 import static org.apache.commons.codec.digest.DigestUtils.shaHex;
-import static util.LibraryAssistantUtil.setStageIcon;
 import static ui.settings.Preferences.getPreferences;
+import static util.LibraryAssistantUtil.setStageIcon;
 
 public class LoginController {
     @FXML
@@ -61,25 +57,22 @@ public class LoginController {
     }
 
     private void closeStage() {
-        ((Stage) validatedUserName.getScene().getWindow()).close();
+        Stage stage = (Stage) validatedUserName.getScene().getWindow();
+        stage.close();
     }
 
     private void loadMain() {
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/fxml/main/main.fxml"));
-            Parent parent = loader.load();
+            StackPane parent = loader.load();
             Stage stage = new Stage(StageStyle.DECORATED);
+            Constant.mainStage = stage;
 
             MainController controller = loader.getController();
             controller.setPrimaryStage(stage);
 
             setStageIcon(stage);
-
-//            EventHandler<MouseEvent> mouseEventHandler = event -> System.out.println("Mouse event handler has been called");
-//            stage.addEventHandler(MouseEvent.MOUSE_PRESSED, mouseEventHandler);
-
-            stage.setOnCloseRequest((event) -> System.exit(0));  // 当主窗口关闭时，退出程序
             stage.setTitle("Library Assistant");
             stage.setScene(new Scene(parent));
             stage.setResizable(true);

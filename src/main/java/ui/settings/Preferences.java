@@ -1,6 +1,7 @@
 package ui.settings;
 
 import com.google.gson.Gson;
+import com.jfoenix.controls.JFXSnackbar;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -9,10 +10,9 @@ import java.io.Writer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import static util.Constant.snackbar;
 import static util.alert.AlertMaker.showErrorMessage;
-import static util.alert.AlertMaker.showSimpleAlert;
-
-import org.apache.commons.codec.digest.DigestUtils;
+import static org.apache.commons.codec.digest.DigestUtils.shaHex;
 
 public class Preferences {
     private static final String CONFIG_FILE = "src/main/resources/configs/config.txt";
@@ -59,14 +59,14 @@ public class Preferences {
 
     public void setPassword(String password) {
         if (password.length() < 16) {
-            this.password = DigestUtils.shaHex(password);
+            this.password = shaHex(password);
         }
         else {
             this.password = password;
         }
     }
 
-    public static void initConfig() {
+    private static void initConfig() {
         Writer writer = null;
         try {
             Preferences preference = new Preferences();
@@ -105,7 +105,7 @@ public class Preferences {
             writer = new FileWriter(CONFIG_FILE);
             gson.toJson(preference, writer);
 
-            showSimpleAlert("Success", "Settings updated");
+            snackbar.fireEvent(new JFXSnackbar.SnackbarEvent("Settings updated"));
         } catch (IOException ex) {
             Logger.getLogger(Preferences.class.getName()).log(Level.SEVERE, null, ex);
             showErrorMessage(ex, "Failed", "Cant save configuration file");
