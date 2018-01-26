@@ -23,18 +23,18 @@
       </Text>
       <VBox layoutX="305.0" layoutY="18.0" prefHeight="175.0" prefWidth="195.0" spacing="5.0">
          <children>
-            <JFXButton onAction="#loadYoutubeChannel" prefHeight="40.0" prefWidth="269.0" styleClass="about-button" text="YouTube Channel" />
+            <JFXButton onAction="#loadYoutubeChannel" prefHeight="40.0" prefWidth="269.0" styleClass="about-button" text="Github" />
             <JFXButton onAction="#loadBlog" prefHeight="40.0" prefWidth="269.0" styleClass="about-button" text="Blog" />
             <JFXButton onAction="#loadLinkedIN" prefHeight="40.0" prefWidth="269.0" styleClass="about-button" text="Linked In" />
             <JFXButton onAction="#loadFacebook" prefHeight="40.0" prefWidth="269.0" styleClass="about-button" text="Facebook" />
          </children>
       </VBox>
-      <VBox alignment="CENTER" layoutX="233.0" layoutY="18.0" prefHeight="175.0" prefWidth="60.0" spacing="5.0">
+      <VBox alignment="CENTER" layoutX="245.0" layoutY="-3.0" prefHeight="218.0" prefWidth="60.0" spacing="15.0">
          <children>
-            <FontAwesomeIconView glyphName="YOUTUBE" size="30" strokeType="OUTSIDE" strokeWidth="0.0" />
-            <FontAwesomeIconView glyphName="LINKEDIN_SQUARE" size="30" strokeType="OUTSIDE" strokeWidth="0.0" />
-            <FontAwesomeIconView glyphName="FACEBOOK_OFFICIAL" size="30" strokeType="OUTSIDE" strokeWidth="0.0" />
-            <FontAwesomeIconView glyphName="RSS_SQUARE" size="30" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <FontAwesomeIconView glyphName="GITHUB_SQUARE" size="30" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="about-icon" />
+            <FontAwesomeIconView glyphName="RSS_SQUARE" size="30" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="about-icon" />
+            <FontAwesomeIconView glyphName="LINKEDIN_SQUARE" size="30" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="about-icon" />
+            <FontAwesomeIconView glyphName="FACEBOOK_OFFICIAL" size="30" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="about-icon" />
          </children>
       </VBox>
    </children>

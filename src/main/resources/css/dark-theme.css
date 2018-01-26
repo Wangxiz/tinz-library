@@ -40,13 +40,15 @@
     -fx-text-fill: derive(-fx-secondary, 20%);
 }
 
-
-/*Login Screen Specific*/
+/* Login Screen Specific */
 .wrong-credentials {
     -jfx-unfocus-color: -fx-red;
     -jfx-focus-color: -fx-red;
 }
 
+.login-icon {
+    -fx-fill: #0d15d2;
+}
 
 /* Main Screen CSS Styling starts here */
 /* Tab Pane styling */
@@ -70,7 +72,7 @@
     -fx-background-color:  derive(-fx-primary, 20%);
 }
 
-/*Hamburger Styling*/
+/* Hamburger Styling */
 .jfx-hamburger-icon {
     -fx-spacing: 7;
 }
@@ -80,9 +82,8 @@
     -fx-background-radius: 5px;
 }
 
-/*Toolbar buttons*/
+/* Toolbar buttons */
 .toolbar-button {
-    /*-fx-background-color: derive(-fx-primary, 20%);*/
     -fx-background-radius: 0px;
     -fx-border-radius: 0px;
     -fx-background-color: -fx-primary;
@@ -97,7 +98,7 @@
     -fx-fill: -fx-primary;
 }
 
-/*Text styling*/
+/* Text styling */
 .main-text {
     -fx-fill: -fx-secondary;
     -fx-font-size: 14pt;
@@ -125,7 +126,7 @@
     -fx-hgap:8;
 }
 
-/*Chart Styling*/
+/* Chart Styling */
 .data0.chart-pie {
     -fx-pie-color: -fx-secondary;
     -fx-border-color: derive(-fx-secondary, -30%);
@@ -138,7 +139,7 @@
     -fx-fill : -fx-secondary;
 }
 
-/*About window*/
+/* About window */
 .about-text {
     -fx-fill: -fx-secondary;
 }
@@ -147,7 +148,11 @@
     -fx-border-color: transparent;
 }
 
-/*Custom window background*/
+.about-icon {
+    -fx-fill: #1976D2;
+}
+
+/* Custom window background */
 .custom-pane {
     -fx-background-color: derive(-fx-primary, 5%);
 }
@@ -156,7 +161,7 @@
     -fx-alignment: center;
 }
 
-/* 这里是覆盖了默认的 error-label 样式，error-label 定义在 JFXTextFieldSkin.java 中  */
+/* 覆盖默认的 error-label 样式，error-label 定义在 JFXTextFieldSkin.java 中  */
 .jfx-password-field .error-label, .jfx-text-field .error-label {
     -fx-text-fill: #ff0000;
     -fx-font-size: 10pt;
@@ -166,6 +171,7 @@
     -fx-text-fill: #ff0000;
 }
 
+/* 覆盖默认的 snackbar 样式 */
 .jfx-snackbar-content {
     -fx-background-color: #214283;
     -fx-padding: 5;

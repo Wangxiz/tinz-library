@@ -13,12 +13,12 @@ public class ToolbarController {
 
     @FXML
     private void loadAddMember() {
-        loadWindow(getClass().getResource("/fxml/addmember/member_add.fxml"), "Add New Member", mainStage, Modality.WINDOW_MODAL);
+        loadWindow(getClass().getResource("/fxml/addmember/member_add.fxml"), "Add New Member", mainStage, Modality.WINDOW_MODAL, false);
     }
 
     @FXML
     private void loadAddBook() {
-        loadWindow(getClass().getResource("/fxml/addbook/add_book.fxml"), "Add New Book", mainStage, Modality.WINDOW_MODAL);
+        loadWindow(getClass().getResource("/fxml/addbook/add_book.fxml"), "Add New Book", mainStage, Modality.WINDOW_MODAL, false);
     }
 
     @FXML
@@ -33,6 +33,6 @@ public class ToolbarController {
 
     @FXML
     private void loadSettings() {
-        loadWindow(getClass().getResource("/fxml/settings/settings.fxml"), "Settings", mainStage, StageStyle.UTILITY, Modality.WINDOW_MODAL);
+        loadWindow(getClass().getResource("/fxml/settings/settings.fxml"), "Settings", mainStage, StageStyle.TRANSPARENT, Modality.WINDOW_MODAL, false);
     }
 }

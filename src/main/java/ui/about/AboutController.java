@@ -15,10 +15,10 @@ import javafx.stage.Stage;
 import static util.LibraryAssistantUtil.setStageIcon;
 
 public class AboutController {
-    private static final String LINKED_IN = "https://in.linkedin.com/in/muhammedafsalvillan";
-    private static final String FACEBOOK = "http://facebook.com/afsalashyana";
-    private static final String WEBSITE = "http://www.genuinecoder.com";
-    private static final String YOUTUBE = "https://www.youtube.com/GenuineCoder";
+    private static final String LINKED_IN = "https://www.linkedin.com/in/wangxiz";
+    private static final String FACEBOOK = "https://www.facebook.com/Wangxiz";
+    private static final String WEBSITE = "http://www.cnblogs.com/Wangxiz";
+    private static final String GITHUB = "https://github.com/Wangxiz";
 
     @FXML
     public void initialize() {}
@@ -46,7 +46,7 @@ public class AboutController {
 
     @FXML
     private void loadYoutubeChannel() {
-        loadWebpage(YOUTUBE);
+        loadWebpage(GITHUB);
     }
 
     @FXML

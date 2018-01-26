@@ -384,28 +384,28 @@ public class MainController {
 
     @FXML
     private void handleMenuAddBook() {
-        loadWindow(getClass().getResource("/fxml/addbook/add_book.fxml"), "Add New Book", mainStage, Modality.WINDOW_MODAL);
+        loadWindow(getClass().getResource("/fxml/addbook/add_book.fxml"), "Add New Book", mainStage, Modality.WINDOW_MODAL, false);
     }
 
     @FXML
     private void handleMenuAddMember() {
-        loadWindow(getClass().getResource("/fxml/addmember/member_add.fxml"), "Add New Member", mainStage, Modality.WINDOW_MODAL);
+        loadWindow(getClass().getResource("/fxml/addmember/member_add.fxml"), "Add New Member", mainStage, Modality.WINDOW_MODAL, false);
     }
 
     @FXML
     private void handleMenuViewBook() {
-        loadWindow(getClass().getResource("/fxml/listbook/book_list.fxml"), "Book List", mainStage, Modality.WINDOW_MODAL);
+        loadWindow(getClass().getResource("/fxml/listbook/book_list.fxml"), "Book List", mainStage, Modality.WINDOW_MODAL, true);
     }
 
     @FXML
     private void handleMenuViewMember() {
-        loadWindow(getClass().getResource("/fxml/listmember/member_list.fxml"), "Member List", mainStage, Modality.WINDOW_MODAL);
+        loadWindow(getClass().getResource("/fxml/listmember/member_list.fxml"), "Member List", mainStage, Modality.WINDOW_MODAL, true);
     }
 
     @FXML
     private void handleAboutMenu() {
-//        loadWindow(getClass().getResource("/fxml/about/about.fxml"), "About Me", mainStage, StageStyle.TRANSPARENT);
-        popup.show(mainStage, 100, 100);
+        loadWindow(getClass().getResource("/fxml/about/about.fxml"), "About Me", mainStage, StageStyle.TRANSPARENT, false);
+//        popup.show(mainStage, 100, 100);
     }
 
     @FXML

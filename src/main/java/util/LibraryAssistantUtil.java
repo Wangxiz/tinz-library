@@ -21,7 +21,7 @@ public class LibraryAssistantUtil {
         stage.getIcons().add(new Image(IMAGE_LOC));
     }
 
-    public static void loadWindow(URL loc, String title, Window owner, StageStyle style, Modality modality) {
+    public static void loadWindow(URL loc, String title, Window owner, StageStyle style, Modality modality, boolean resizable) {
         try {
             Parent parent = FXMLLoader.load(loc);
 
@@ -29,6 +29,7 @@ public class LibraryAssistantUtil {
             if(style != null) stage.initStyle(style);
             if(modality != null) stage.initModality(modality);
             setStageIcon(stage);
+            stage.setResizable(resizable);
             stage.initOwner(owner);
             stage.setTitle(title);
             stage.setScene(new Scene(parent));
@@ -38,15 +39,31 @@ public class LibraryAssistantUtil {
         }
     }
 
+    public static void loadWindow(URL loc, String title, Window owner, StageStyle style, Modality modality) {
+        loadWindow(loc, title, owner, null, null, true);
+    }
+
+    public static void loadWindow(URL loc, String title, Window owner, boolean resizable) {
+        loadWindow(loc, title, owner, null, null, resizable);
+    }
+
     public static void loadWindow(URL loc, String title, Window owner) {
-        loadWindow(loc, title, owner, null, null);
+        loadWindow(loc, title, owner, null, null, true);
+    }
+
+    public static void loadWindow(URL loc, String title, Window owner, StageStyle style, boolean resizable) {
+        loadWindow(loc, title, owner, style, null, resizable);
     }
 
     public static void loadWindow(URL loc, String title, Window owner, StageStyle style) {
-        loadWindow(loc, title, owner, style, null);
+        loadWindow(loc, title, owner, style, null, true);
+    }
+
+    public static void loadWindow(URL loc, String title, Window owner, Modality modality, boolean resizable) {
+        loadWindow(loc, title, owner, null, modality, resizable);
     }
 
     public static void loadWindow(URL loc, String title, Window owner, Modality modality) {
-        loadWindow(loc, title, owner, null, modality);
+        loadWindow(loc, title, owner, null, modality, true);
     }
 }

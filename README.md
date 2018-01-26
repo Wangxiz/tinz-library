@@ -2,7 +2,6 @@
 This is a library management software developed using JavaFX programming language. The entire development video with explanation of each and every part (in real time) is available in my YouTube Channel [Genuine Coder Youtube Channel](https://www.youtube.com/playlist?list=PLhs1urmduZ29jTcE1ca8Z6bZNvH_39ayL).
 
 ## TODOs
-- 使用 snackBar
 - 使用 JFoenix Dialog
 - 修改图标
 - 登录界面在等待主界面时，显示等待圈圈
@@ -15,6 +14,7 @@ This is a library management software developed using JavaFX programming languag
 - \#03 ~~菜单栏中 View->Member 不是弹出列表窗口，而是新建 member窗口~~ **Fixed!**
 - \#04 ~~当开始输入的时候即检测有输入，即时去掉 input request 的错误提示~~ **Fixed!**
 - \#05 ~~编辑 book 和 member 信息后不会自动更新~~ **Fixed!**
+- \#06 Popup 窗口不能显示
 
 ## Releases
 ### 2018-01-26
@@ -29,6 +29,9 @@ This is a library management software developed using JavaFX programming languag
 - 使用 `SnackBar` 展示编辑 settings 成功的消息
 - Fixed bug\#05, 在(编辑)窗口关闭前触发 `WindowEvent.WINDOW_CLOSE_REQUEST` 事件
 - 使用 `Modality.WINDOW_MODAL` 设置弹出子窗口时，父窗口不能响应
+- 设置某些窗口为 `Modality.WINDOW_MODAL` 并且 `setResizable(false)` 时，窗口只显示一个 X
+- 修改 About 界面
+- 修改 About 界面图标 css
 
 ### 2018-01-25
 - Fixed bug\#02, 为 `member list` 添加四个 Anchor
