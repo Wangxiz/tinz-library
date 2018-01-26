@@ -9,6 +9,8 @@ import java.util.logging.Logger;
 
 //import javafx.event.EventHandler;
 //import javafx.scene.input.MouseEvent;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -34,17 +36,8 @@ public class LoginController {
     public void initialize() {
         preference = getPreferences();
 
-        validatedUserName.focusedProperty().addListener((o, oldVal, newVal) -> {
-            if (!newVal) {
-                validatedUserName.validate();
-            }
-        });
-
-        validatedPassword.focusedProperty().addListener((o, oldVal, newVal) -> {
-            if (!newVal) {
-                validatedPassword.validate();
-            }
-        });
+        validatedUserName.textProperty().addListener((observable, oldValue, newValue) -> validatedUserName.validate());
+        validatedPassword.textProperty().addListener((observable, oldValue, newValue) -> validatedPassword.validate());
     }
 
     @FXML
@@ -86,6 +79,7 @@ public class LoginController {
 //            EventHandler<MouseEvent> mouseEventHandler = event -> System.out.println("Mouse event handler has been called");
 //            stage.addEventHandler(MouseEvent.MOUSE_PRESSED, mouseEventHandler);
 
+            stage.setOnCloseRequest((event) -> System.exit(0));  // 当主窗口关闭时，退出程序
             stage.setTitle("Library Assistant");
             stage.setScene(new Scene(parent));
             stage.setResizable(true);

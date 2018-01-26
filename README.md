@@ -13,13 +13,18 @@ This is a library management software developed using JavaFX programming languag
 - 使用 stage manager
 
 ## Bugs
-- \#01 当开启了 book list 等窗口，关闭主窗口时，不会退出程序
+- \#01 ~~当开启了 book list 等窗口，关闭主窗口时，不会退出程序~~ **Fixed!**
 - \#02 ~~member list 不能正常放大缩小~~ **Fixed!**
 - \#03 ~~菜单栏中 View->Member 不是弹出列表窗口，而是新建 member窗口~~ **Fixed!**
+- \#04 ~~当开始输入的时候即检测有输入，即时去掉 input request 的错误提示~~ **Fixed!**
 
 ## Releases
+### 2018-01-26
+- Fixed bug\#03, 为 `mainStage` 添加 `setOnCloseRequest` 响应事件
+- Fixed bug\#04, 将 `focusedProperty().addListener` 响应事件改为 `textProperty().addListener`
+
 ### 2018-01-25
-- Fixed bug\#02
+- Fixed bug\#02, 为 `member list` 添加四个 Anchor
 - 调整项目结构
 - 修改 CSS
 - 密码错误时，清空当前输入的密码
