@@ -22,6 +22,7 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import database.DatabaseHandler;
 import javafx.stage.StageStyle;
+import javafx.stage.Window;
 import util.Constant;
 
 import static util.alert.AlertMaker.showMaterialDialog;
@@ -115,20 +116,12 @@ public class MainController {
     @FXML
     private JFXTabPane mainTabPane;
 
-    private JFXPopup popup;
-
     public void setPrimaryStage(Stage primaryStage) {
         this.primaryStage = primaryStage;
     }
 
     @FXML
     public void initialize() {
-        try {
-            popup = new JFXPopup(FXMLLoader.load(getClass().getResource("/fxml/about/DemoPopup.fxml")));
-        } catch (IOException ioExc) {
-            ioExc.printStackTrace();
-        }
-
         JFXDepthManager.setDepth(book_info, 1);
         JFXDepthManager.setDepth(member_info, 1);
 
@@ -404,8 +397,10 @@ public class MainController {
 
     @FXML
     private void handleAboutMenu() {
-        loadWindow(getClass().getResource("/fxml/about/about.fxml"), "About Me", mainStage, StageStyle.TRANSPARENT, false);
-//        popup.show(mainStage, 100, 100);
+        Stage stage = loadWindow(getClass().getResource("/fxml/about/about.fxml"), "About Me", mainStage, StageStyle.TRANSPARENT, false);
+        stage.focusedProperty().addListener((observable, oldValue, newValue) -> {
+            if(oldValue && !newValue) stage.hide();
+        });
     }
 
     @FXML

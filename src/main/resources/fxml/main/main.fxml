@@ -22,6 +22,7 @@
    <children>
       <AnchorPane fx:id="rootAnchorPane">
          <children>
+            <AnchorPane fx:id="aboutPane" AnchorPane.bottomAnchor="200" AnchorPane.topAnchor="200" AnchorPane.leftAnchor="200" AnchorPane.rightAnchor="400" />
             <BorderPane prefHeight="455.0" prefWidth="665.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <top>
                   <MenuBar BorderPane.alignment="CENTER">

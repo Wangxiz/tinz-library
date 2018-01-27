@@ -56,6 +56,7 @@ public class MemberListController {
         nameCol.setCellValueFactory(new PropertyValueFactory<>("name"));
         idCol.setCellValueFactory(new PropertyValueFactory<>("id"));
         mobileCol.setCellValueFactory(new PropertyValueFactory<>("mobile"));
+        mobileCol.setSortable(false);
         emailCol.setCellValueFactory(new PropertyValueFactory<>("email"));
     }
 

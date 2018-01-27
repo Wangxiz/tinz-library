@@ -77,6 +77,7 @@ public class LoginController {
             stage.setScene(new Scene(parent));
             stage.setResizable(true);
             stage.setMaximized(true);
+//            stage.setOpacity(0.5);  // 设定 stage 的透明度
             stage.show();
         } catch (IOException ex) {
             Logger.getLogger(MainController.class.getName()).log(Level.SEVERE, null, ex);

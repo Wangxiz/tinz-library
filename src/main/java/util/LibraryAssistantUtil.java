@@ -21,7 +21,7 @@ public class LibraryAssistantUtil {
         stage.getIcons().add(new Image(IMAGE_LOC));
     }
 
-    public static void loadWindow(URL loc, String title, Window owner, StageStyle style, Modality modality, boolean resizable) {
+    public static Stage loadWindow(URL loc, String title, Window owner, StageStyle style, Modality modality, boolean resizable) {
         try {
             Parent parent = FXMLLoader.load(loc);
 
@@ -34,36 +34,38 @@ public class LibraryAssistantUtil {
             stage.setTitle(title);
             stage.setScene(new Scene(parent));
             stage.show();
+            return stage;
         } catch (IOException ex) {
             Logger.getLogger(MainController.class.getName()).log(Level.SEVERE, null, ex);
+            return null;
         }
     }
 
-    public static void loadWindow(URL loc, String title, Window owner, StageStyle style, Modality modality) {
-        loadWindow(loc, title, owner, null, null, true);
+    public static Stage loadWindow(URL loc, String title, Window owner, StageStyle style, Modality modality) {
+        return loadWindow(loc, title, owner, null, null, true);
     }
 
-    public static void loadWindow(URL loc, String title, Window owner, boolean resizable) {
-        loadWindow(loc, title, owner, null, null, resizable);
+    public static Stage loadWindow(URL loc, String title, Window owner, boolean resizable) {
+        return loadWindow(loc, title, owner, null, null, resizable);
     }
 
-    public static void loadWindow(URL loc, String title, Window owner) {
-        loadWindow(loc, title, owner, null, null, true);
+    public static Stage loadWindow(URL loc, String title, Window owner) {
+        return loadWindow(loc, title, owner, null, null, true);
     }
 
-    public static void loadWindow(URL loc, String title, Window owner, StageStyle style, boolean resizable) {
-        loadWindow(loc, title, owner, style, null, resizable);
+    public static Stage loadWindow(URL loc, String title, Window owner, StageStyle style, boolean resizable) {
+        return loadWindow(loc, title, owner, style, null, resizable);
     }
 
-    public static void loadWindow(URL loc, String title, Window owner, StageStyle style) {
-        loadWindow(loc, title, owner, style, null, true);
+    public static Stage loadWindow(URL loc, String title, Window owner, StageStyle style) {
+        return loadWindow(loc, title, owner, style, null, true);
     }
 
-    public static void loadWindow(URL loc, String title, Window owner, Modality modality, boolean resizable) {
-        loadWindow(loc, title, owner, null, modality, resizable);
+    public static Stage loadWindow(URL loc, String title, Window owner, Modality modality, boolean resizable) {
+        return loadWindow(loc, title, owner, null, modality, resizable);
     }
 
-    public static void loadWindow(URL loc, String title, Window owner, Modality modality) {
-        loadWindow(loc, title, owner, null, modality, true);
+    public static Stage loadWindow(URL loc, String title, Window owner, Modality modality) {
+        return loadWindow(loc, title, owner, null, modality, true);
     }
 }

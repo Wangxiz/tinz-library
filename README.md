@@ -14,9 +14,16 @@ This is a library management software developed using JavaFX programming languag
 - \#03 ~~菜单栏中 View->Member 不是弹出列表窗口，而是新建 member窗口~~ **Fixed!**
 - \#04 ~~当开始输入的时候即检测有输入，即时去掉 input request 的错误提示~~ **Fixed!**
 - \#05 ~~编辑 book 和 member 信息后不会自动更新~~ **Fixed!**
-- \#06 Popup 窗口不能显示
+- \#06 ~~Popup 窗口不能显示~~ **Fixed!**
+- \#07 控制 TableView 显示的列宽
+- \#08 ~~Popup 窗口位置不能控制~~ **Fixed!**
 
 ## Releases
+### 2018-01-27
+- 使用 `TableColumn.setSortable(false)` 设定表格列不可排序
+- Fixed bug\#06，使用 JFXPopup 重写 About 界面
+- Fixed bug\#08，用回 Stage 显示 About 界面，为其 FocusProperty 加上监听事件
+
 ### 2018-01-26
 - Fixed bug\#01, 为 `mainStage` 添加 `setOnCloseRequest` 响应事件
 - Fixed bug\#04, 将 `focusedProperty().addListener` 响应事件改为 `textProperty().addListener`
@@ -55,11 +62,6 @@ This is a library management software developed using JavaFX programming languag
   * [Apache Commons](https://commons.apache.org/) - For creating SHA hash
   * [GSon](https://github.com/google/gson) - JSON Library. Used for storing configuration
   * [FontawesomeFX](https://bitbucket.org/Jerady/fontawesomefx) - Icon library
-
-## Default Login Credentials
-| Username  | Password |
-| ------------- | ------------- |
-| admin  | admin  |
 
 ## Screenshots
 <p align="center">

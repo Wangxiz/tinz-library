@@ -36,7 +36,7 @@ public class BookListController {
     private ObservableList<Book> list = FXCollections.observableArrayList();
 
     @FXML
-    private TableView<Book> tableView;
+    private TableView<Book> bookTable;
     @FXML
     private TableColumn<Book, String> titleCol;
     @FXML
@@ -60,10 +60,10 @@ public class BookListController {
         authorCol.setCellValueFactory(new PropertyValueFactory<>("author"));
         publisherCol.setCellValueFactory(new PropertyValueFactory<>("publisher"));
         availabilityCol.setCellValueFactory(new PropertyValueFactory<>("availability"));
+        availabilityCol.setSortable(false);
     }
 
     private void loadData() {
-        System.out.println("loadData");
         list.clear();
         
         DatabaseHandler handler = DatabaseHandler.getInstance();
@@ -83,14 +83,13 @@ public class BookListController {
             Logger.getLogger(BookAddController.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-        tableView.setItems(list);
-        System.out.println("loadDataEnd");
+        bookTable.setItems(list);
     }
 
     @FXML
     private void handleBookDeleteOption() {
         //Fetch the selected row
-        Book selectedForDeletion = tableView.getSelectionModel().getSelectedItem();
+        Book selectedForDeletion = bookTable.getSelectionModel().getSelectedItem();
         if (selectedForDeletion == null) {
             showErrorMessage("No book selected", "Please select a book for deletion.");
             return;
@@ -119,7 +118,7 @@ public class BookListController {
     @FXML
     private void handleBookEditOption() {
         //Fetch the selected row
-        Book selectedForEdit = tableView.getSelectionModel().getSelectedItem();
+        Book selectedForEdit = bookTable.getSelectionModel().getSelectedItem();
         if (selectedForEdit == null) {
             showErrorMessage("No book selected", "Please select a book for edit.");
             return;

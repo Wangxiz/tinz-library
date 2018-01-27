@@ -7,6 +7,7 @@ import java.net.URISyntaxException;
 
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
