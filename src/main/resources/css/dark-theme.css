@@ -72,6 +72,46 @@
     -fx-background-color:  derive(-fx-primary, 20%);
 }
 
+#miImportBooks > .label {
+    -fx-graphic:url(/icons/import_20.png);
+    -fx-graphic-text-gap: 5px;
+}
+
+#miClose > .label {
+    -fx-graphic:url(/icons/close.png);
+    -fx-graphic-text-gap: 8px;
+}
+
+#miAddBook > .label {
+    -fx-graphic:url(/icons/add_book_20.png);
+    -fx-graphic-text-gap: 5px;
+}
+
+#miAddMember > .label {
+    -fx-graphic:url(/icons/add_member.png);
+    -fx-graphic-text-gap: 5px;
+}
+
+#miViewBook > .label {
+    -fx-graphic:url(/icons/view_book.png);
+    -fx-graphic-text-gap: 5px;
+}
+
+#miViewMember > .label {
+    -fx-graphic:url(/icons/view_member.png);
+    -fx-graphic-text-gap: 5px;
+}
+
+#miFullScreen > .label {
+    -fx-graphic:url(/icons/full_screen.png);
+    -fx-graphic-text-gap: 5px;
+}
+
+#miAbout > .label {
+    -fx-graphic:url(/icons/about.png);
+    -fx-graphic-text-gap: 5px;
+}
+
 /* Hamburger Styling */
 .jfx-hamburger-icon {
     -fx-spacing: 7;

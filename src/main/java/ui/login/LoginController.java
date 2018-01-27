@@ -69,15 +69,11 @@ public class LoginController {
             Stage stage = new Stage(StageStyle.DECORATED);
             Constant.mainStage = stage;
 
-            MainController controller = loader.getController();
-            controller.setPrimaryStage(stage);
-
             setStageIcon(stage);
-            stage.setTitle("Library Assistant");
+            stage.setTitle("Tinz-Libraries");
             stage.setScene(new Scene(parent));
             stage.setResizable(true);
             stage.setMaximized(true);
-//            stage.setOpacity(0.5);  // 设定 stage 的透明度
             stage.show();
         } catch (IOException ex) {
             Logger.getLogger(MainController.class.getName()).log(Level.SEVERE, null, ex);

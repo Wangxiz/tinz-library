@@ -10,6 +10,7 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
@@ -22,32 +23,34 @@
    <children>
       <AnchorPane fx:id="rootAnchorPane">
          <children>
-            <AnchorPane fx:id="aboutPane" AnchorPane.bottomAnchor="200" AnchorPane.topAnchor="200" AnchorPane.leftAnchor="200" AnchorPane.rightAnchor="400" />
             <BorderPane prefHeight="455.0" prefWidth="665.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <top>
                   <MenuBar BorderPane.alignment="CENTER">
                     <menus>
                       <Menu mnemonicParsing="false" text="File">
                         <items>
-                          <MenuItem mnemonicParsing="false" onAction="#handleMenuClose" text="Close" />
+                            <MenuItem id="miImportBooks" mnemonicParsing="false" text="Import books..." />
+                            <SeparatorMenuItem mnemonicParsing="false" />
+                            <MenuItem id="miClose" mnemonicParsing="false" onAction="#handleMenuClose" text="Close" />
                         </items>
                       </Menu>
                       <Menu mnemonicParsing="false" text="Add">
-                        <items>
-                          <MenuItem mnemonicParsing="false" onAction="#handleMenuAddBook" text="Add Book" />
-                              <MenuItem mnemonicParsing="false" onAction="#handleMenuAddMember" text="Add Member" />
-                        </items>
+                          <items>
+                              <MenuItem id="miAddBook" mnemonicParsing="false" onAction="#handleMenuAddBook" text="Add Book" />
+                              <MenuItem id="miAddMember" mnemonicParsing="false" onAction="#handleMenuAddMember" text="Add Member" />
+                          </items>
                       </Menu>
                       <Menu mnemonicParsing="false" text="View">
                            <items>
-                              <MenuItem mnemonicParsing="false" onAction="#handleMenuViewBook" text="View Book" />
-                              <MenuItem mnemonicParsing="false" onAction="#handleMenuViewMember" text="View Members" />
-                              <MenuItem mnemonicParsing="false" onAction="#handleMenuFullScreen" text="Full Screen" />
+                              <MenuItem id="miViewBook" mnemonicParsing="false" onAction="#handleMenuViewBook" text="View Book" />
+                              <MenuItem id="miViewMember" mnemonicParsing="false" onAction="#handleMenuViewMember" text="View Members" />
+                              <SeparatorMenuItem mnemonicParsing="false" />
+                              <MenuItem id="miFullScreen" mnemonicParsing="false" onAction="#handleMenuFullScreen" text="Full Screen" />
                            </items>
                         </Menu>
                       <Menu mnemonicParsing="false" text="Help">
                         <items>
-                          <MenuItem mnemonicParsing="false" onAction="#handleAboutMenu" text="About" />
+                          <MenuItem id="miAbout" mnemonicParsing="false" onAction="#handleAboutMenu" text="About" />
                         </items>
                       </Menu>
                     </menus>

@@ -1,5 +1,5 @@
-# Material Design Library Management Software using JavaFX
-This is a library management software developed using JavaFX programming language. The entire development video with explanation of each and every part (in real time) is available in my YouTube Channel [Genuine Coder Youtube Channel](https://www.youtube.com/playlist?list=PLhs1urmduZ29jTcE1ca8Z6bZNvH_39ayL).
+# Tinz-Libraries
+This is a Material Design Library Management Software developed using JavaFX and based on [Library-Assistant](https://github.com/afsalashyana/Library-Assistant)
 
 ## TODOs
 - 使用 JFoenix Dialog
@@ -7,6 +7,8 @@ This is a library management software developed using JavaFX programming languag
 - 登录界面在等待主界面时，显示等待圈圈
 - 使用 stage manager
 - 添加多用户支持
+- member-list 和 book-list 中实现双击左键进行编辑
+- File 菜单栏新增 import books... 实现其响应函数
 
 ## Bugs
 - \#01 ~~当开启了 book list 等窗口，关闭主窗口时，不会退出程序~~ **Fixed!**
@@ -17,12 +19,15 @@ This is a library management software developed using JavaFX programming languag
 - \#06 ~~Popup 窗口不能显示~~ **Fixed!**
 - \#07 控制 TableView 显示的列宽
 - \#08 ~~Popup 窗口位置不能控制~~ **Fixed!**
+- \#09 添加 book 或者 member 之后，主界面的 chart 不会自动更新
 
 ## Releases
 ### 2018-01-27
 - 使用 `TableColumn.setSortable(false)` 设定表格列不可排序
 - Fixed bug\#06，使用 JFXPopup 重写 About 界面
 - Fixed bug\#08，用回 Stage 显示 About 界面，为其 FocusProperty 加上监听事件
+- 添加 Import book... 菜单项（功能响应TODO）
+- 为菜单项增加图标
 
 ### 2018-01-26
 - Fixed bug\#01, 为 `mainStage` 添加 `setOnCloseRequest` 响应事件

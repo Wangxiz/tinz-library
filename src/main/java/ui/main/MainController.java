@@ -22,12 +22,11 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import database.DatabaseHandler;
 import javafx.stage.StageStyle;
-import javafx.stage.Window;
-import util.Constant;
 
 import static util.alert.AlertMaker.showMaterialDialog;
 import static util.LibraryAssistantUtil.loadWindow;
 import static util.Constant.mainStage;
+import static util.Constant.snackbar;
 
 import java.io.IOException;
 import java.sql.ResultSet;
@@ -50,8 +49,7 @@ public class MainController {
     private PieChart bookChart;
     private PieChart memberChart;
 
-    private Stage primaryStage;
-    private JFXSnackbar snackbar;
+//    private Stage primaryStage;
 
     @FXML
     private HBox book_info;
@@ -116,10 +114,6 @@ public class MainController {
     @FXML
     private JFXTabPane mainTabPane;
 
-    public void setPrimaryStage(Stage primaryStage) {
-        this.primaryStage = primaryStage;
-    }
-
     @FXML
     public void initialize() {
         JFXDepthManager.setDepth(book_info, 1);
@@ -132,8 +126,6 @@ public class MainController {
 
         snackbar = new JFXSnackbar(rootPane);
         snackbar.setPrefWidth(300);
-        snackbar.setStyle("-fx-text-fill: #FFFF8D");
-        Constant.snackbar = snackbar;
     }
 
     @FXML
