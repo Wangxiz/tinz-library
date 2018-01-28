@@ -1,14 +1,16 @@
 # Tinz-Libraries
-This is a Material Design Library Management Software developed using JavaFX and based on [Library-Assistant](https://github.com/afsalashyana/Library-Assistant)
+This is a **Material Design Library Management Software** developed using JavaFX and based on [Library-Assistant](https://github.com/afsalashyana/Library-Assistant)
 
 ## TODOs
 - 使用 JFoenix Dialog
 - 修改图标
 - 登录界面在等待主界面时，显示等待圈圈
+   - Idea: 在主界面的 onShowingProperty 中添加事件处理函数进行关闭 
 - 使用 stage manager
 - 添加多用户支持
 - member-list 和 book-list 中实现双击左键进行编辑
 - File 菜单栏新增 import books... 实现其响应函数
+- 为菜单栏添加快捷键 
 
 ## Bugs
 - \#01 ~~当开启了 book list 等窗口，关闭主窗口时，不会退出程序~~ **Fixed!**
@@ -20,8 +22,12 @@ This is a Material Design Library Management Software developed using JavaFX and
 - \#07 控制 TableView 显示的列宽
 - \#08 ~~Popup 窗口位置不能控制~~ **Fixed!**
 - \#09 添加 book 或者 member 之后，主界面的 chart 不会自动更新
+- \#10 每次打开 About 等截面都要重新 load
 
 ## Releases
+### 2018-01-28
+
+
 ### 2018-01-27
 - 使用 `TableColumn.setSortable(false)` 设定表格列不可排序
 - Fixed bug\#06，使用 JFXPopup 重写 About 界面
