@@ -26,7 +26,7 @@ This is a **Material Design Library Management Software** developed using JavaFX
 
 ## Releases
 ### 2018-01-28
-
+- 实现 Login 界面可拖动
 
 ### 2018-01-27
 - 使用 `TableColumn.setSortable(false)` 设定表格列不可排序
