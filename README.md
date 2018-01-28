@@ -10,7 +10,6 @@ This is a **Material Design Library Management Software** developed using JavaFX
 - 添加多用户支持
 - member-list 和 book-list 中实现双击左键进行编辑
 - File 菜单栏新增 import books... 实现其响应函数
-- 为菜单栏添加快捷键 
 
 ## Bugs
 - \#01 ~~当开启了 book list 等窗口，关闭主窗口时，不会退出程序~~ **Fixed!**
@@ -27,6 +26,7 @@ This is a **Material Design Library Management Software** developed using JavaFX
 ## Releases
 ### 2018-01-28
 - 实现 Login 界面可拖动
+- 为菜单栏添加快捷键 
 
 ### 2018-01-27
 - 使用 `TableColumn.setSortable(false)` 设定表格列不可排序

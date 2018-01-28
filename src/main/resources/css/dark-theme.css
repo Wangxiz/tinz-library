@@ -77,9 +77,17 @@
     -fx-graphic-text-gap: 5px;
 }
 
+#miImportBooks > .accelerator-text {
+    -fx-graphic: none;
+}
+
 #miClose > .label {
     -fx-graphic:url(/icons/close.png);
     -fx-graphic-text-gap: 8px;
+}
+
+#miClose > .accelerator-text {
+    -fx-graphic: none;
 }
 
 #miAddBook > .label {
@@ -87,9 +95,17 @@
     -fx-graphic-text-gap: 5px;
 }
 
+#miAddBook > .accelerator-text {
+    -fx-graphic: none;
+}
+
 #miAddMember > .label {
     -fx-graphic:url(/icons/add_member.png);
     -fx-graphic-text-gap: 5px;
+}
+
+#miAddMember > .accelerator-text {
+    -fx-graphic: none;
 }
 
 #miViewBook > .label {
@@ -97,9 +113,17 @@
     -fx-graphic-text-gap: 5px;
 }
 
+#miViewBook > .accelerator-text {
+    -fx-graphic: none;
+}
+
 #miViewMember > .label {
     -fx-graphic:url(/icons/view_member.png);
     -fx-graphic-text-gap: 5px;
+}
+
+#miViewMember > .accelerator-text {
+    -fx-graphic: none;
 }
 
 #miFullScreen > .label {
@@ -107,9 +131,17 @@
     -fx-graphic-text-gap: 5px;
 }
 
+#miFullScreen > .accelerator-text {
+    -fx-graphic: none;
+}
+
 #miAbout > .label {
     -fx-graphic:url(/icons/about.png);
     -fx-graphic-text-gap: 5px;
+}
+
+#miAbout > .accelerator-text {
+    -fx-graphic: none;
 }
 
 /* Hamburger Styling */
