@@ -70,6 +70,7 @@ public class LoginController {
             Constant.mainStage = stage;
 
             setStageIcon(stage);
+            stage.setFullScreenExitHint("按 Esc 或 Ctrl+F 可退出全屏模式");
             stage.setTitle("Tinz-Libraries");
             stage.setScene(new Scene(parent));
             stage.setResizable(true);

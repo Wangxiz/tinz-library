@@ -10,8 +10,11 @@ import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.chart.PieChart;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
@@ -48,8 +51,6 @@ public class MainController {
     private DatabaseHandler databaseHandler;
     private PieChart bookChart;
     private PieChart memberChart;
-
-//    private Stage primaryStage;
 
     @FXML
     private HBox book_info;
@@ -113,6 +114,8 @@ public class MainController {
     private Tab renewTab;
     @FXML
     private JFXTabPane mainTabPane;
+    @FXML
+    private MenuItem fullScreen;
 
     @FXML
     public void initialize() {
@@ -397,6 +400,33 @@ public class MainController {
 
     @FXML
     private void handleMenuFullScreen() {
+        final String inFull = getClass().getResource("/css/in_full_screen.css").toExternalForm();
+        final String outFull = getClass().getResource("/css/out_full_screen.css").toExternalForm();
+        mainStage.fullScreenProperty().addListener((observable, oldValue, newValue) -> {
+            if(newValue && !oldValue) {
+//                Image openIcon = new Image("/icons/fullscreen_exit.png");
+//                ImageView openView = new ImageView(openIcon);
+//                openView.setFitWidth(20);
+//                openView.setFitHeight(20);
+                rootPane.getStylesheets().clear();
+                rootPane.getStylesheets().add(outFull);
+                fullScreen.setText("Exit Full Screen");
+//                fullScreen.setStyle("");
+//                fullScreen.graphicProperty().unbind();
+//                fullScreen.setGraphic(openView);
+            }
+            else if(!newValue && oldValue) {
+//                Image openIcon = new Image("/icons/fullscreen_enter.png");
+//                ImageView openView = new ImageView(openIcon);
+//                openView.setFitWidth(20);
+//                openView.setFitHeight(20);
+                rootPane.getStylesheets().clear();
+                rootPane.getStylesheets().add(inFull);
+                fullScreen.setText("Enter Full Screen");
+//                fullScreen.graphicProperty().unbind();
+//                fullScreen.setGraphic(openView);
+            }
+        });
         Stage stage = ((Stage) rootPane.getScene().getWindow());
         stage.setFullScreen(!stage.isFullScreen());
     }

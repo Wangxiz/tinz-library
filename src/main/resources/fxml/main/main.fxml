@@ -20,7 +20,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="1000.0" stylesheets="/css/dark-theme.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.main.MainController">
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="1000.0" stylesheets="/css/in_full_screen.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.main.MainController">
    <children>
       <AnchorPane fx:id="rootAnchorPane">
          <children>
@@ -64,7 +64,7 @@
                                     <KeyCodeCombination alt="UP" code="M" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
                                  </accelerator></MenuItem>
                               <SeparatorMenuItem mnemonicParsing="false" />
-                              <MenuItem id="miFullScreen" mnemonicParsing="false" onAction="#handleMenuFullScreen" text="Full Screen">
+                              <MenuItem fx:id="fullScreen" id="miFullScreen" mnemonicParsing="false" onAction="#handleMenuFullScreen" text="Enter Full Screen">
                                  <accelerator>
                                     <KeyCodeCombination alt="UP" code="F" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
                                  </accelerator></MenuItem>

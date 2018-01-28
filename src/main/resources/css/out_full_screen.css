@@ -127,8 +127,8 @@
 }
 
 #miFullScreen > .label {
-    /*-fx-graphic:url(/icons/full_screen.png);*/
-    -fx-graphic-text-gap: 25px;
+    -fx-graphic:url(/icons/fullscreen_exit.png);
+    -fx-graphic-text-gap: 5px;
 }
 
 #miFullScreen > .accelerator-text {

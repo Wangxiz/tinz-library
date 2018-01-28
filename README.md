@@ -5,7 +5,7 @@ This is a **Material Design Library Management Software** developed using JavaFX
 - 使用 JFoenix Dialog
 - 修改图标
 - 登录界面在等待主界面时，显示等待圈圈
-   - Idea: 在主界面的 onShowingProperty 中添加事件处理函数进行关闭 
+   - Idea: 在主界面的 onShowingProperty 中添加事件处理函数进行关闭
 - 使用 stage manager
 - 添加多用户支持
 - member-list 和 book-list 中实现双击左键进行编辑
@@ -26,7 +26,10 @@ This is a **Material Design Library Management Software** developed using JavaFX
 ## Releases
 ### 2018-01-28
 - 实现 Login 界面可拖动
-- 为菜单栏添加快捷键 
+- 为菜单栏添加快捷键
+- 使用 Maven 管理 jar 包，删除 libs
+- 当进入和退出全屏模式的时候，修改菜单项的图标和文本
+- 修改退出全屏模式的提示文字
 
 ### 2018-01-27
 - 使用 `TableColumn.setSortable(false)` 设定表格列不可排序

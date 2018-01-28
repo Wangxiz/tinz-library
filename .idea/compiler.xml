@@ -9,7 +9,7 @@
         <module name="Library-Assistant" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="Library-Assistant" target="1.8" />
     </bytecodeTargetLevel>
   </component>
