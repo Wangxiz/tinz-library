@@ -16,6 +16,7 @@ import javafx.stage.Stage;
 import database.DatabaseHandler;
 import javafx.stage.WindowEvent;
 
+import static util.Constant.mainController;
 import static util.Constant.snackbar;
 import static ui.listbook.BookListController.Book;
 import static util.alert.AlertMaker.showErrorMessage;
@@ -80,6 +81,7 @@ public class BookAddController {
         handleCancel();
 
         if (handler.execAction(qu)) {
+            mainController.refreshBookChart();
             snackbar.fireEvent(new JFXSnackbar.SnackbarEvent("Successfully add a new book"));
         }
         else {

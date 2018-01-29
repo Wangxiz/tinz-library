@@ -27,6 +27,7 @@ import database.DatabaseHandler;
 import ui.addbook.BookAddController;
 import ui.main.MainController;
 
+import static util.Constant.mainController;
 import static util.Constant.snackbar;
 import static util.LibraryAssistantUtil.setStageIcon;
 import static util.alert.AlertMaker.showErrorMessage;
@@ -105,6 +106,7 @@ public class BookListController {
         if (answer.isPresent() && answer.get() == ButtonType.OK) {
             Boolean result = DatabaseHandler.getInstance().deleteBook(selectedForDeletion);
             if (result) {
+                mainController.refreshBookChart();
                 snackbar.fireEvent(new JFXSnackbar.SnackbarEvent("《" + selectedForDeletion.getTitle() + "》 was deleted successfully."));
                 list.remove(selectedForDeletion);
             } else {

@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import ui.listmember.MemberListController;
 
+import static util.Constant.mainController;
 import static util.Constant.snackbar;
 import static util.alert.AlertMaker.showErrorMessage;
 
@@ -65,6 +66,7 @@ public class MemberAddController {
         handleCancel();
 
         if (handler.execAction(st)) {
+            mainController.refreshMemberChart();
             snackbar.fireEvent(new JFXSnackbar.SnackbarEvent("Successfully add a new member"));
         }
         else {

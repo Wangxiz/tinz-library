@@ -406,27 +406,14 @@ public class MainController {
         final String outFull = getClass().getResource("/css/out_full_screen.css").toExternalForm();
         mainStage.fullScreenProperty().addListener((observable, oldValue, newValue) -> {
             if(newValue && !oldValue) {
-//                Image openIcon = new Image("/icons/fullscreen_exit.png");
-//                ImageView openView = new ImageView(openIcon);
-//                openView.setFitWidth(20);
-//                openView.setFitHeight(20);
                 rootPane.getStylesheets().clear();
                 rootPane.getStylesheets().add(outFull);
                 fullScreen.setText("Exit Full Screen");
-//                fullScreen.setStyle("");
-//                fullScreen.graphicProperty().unbind();
-//                fullScreen.setGraphic(openView);
             }
             else if(!newValue && oldValue) {
-//                Image openIcon = new Image("/icons/fullscreen_enter.png");
-//                ImageView openView = new ImageView(openIcon);
-//                openView.setFitWidth(20);
-//                openView.setFitHeight(20);
                 rootPane.getStylesheets().clear();
                 rootPane.getStylesheets().add(inFull);
                 fullScreen.setText("Enter Full Screen");
-//                fullScreen.graphicProperty().unbind();
-//                fullScreen.setGraphic(openView);
             }
         });
         Stage stage = ((Stage) rootPane.getScene().getWindow());
@@ -505,9 +492,19 @@ public class MainController {
         });
     }
 
-    private void refreshGraphs() {
+    public void refreshBookChart() {
         bookChart.setData(databaseHandler.getBookGraphStatistics());
+    }
+
+    public void refreshMemberChart() {
         memberChart.setData(databaseHandler.getMemberGraphStatistics());
+    }
+
+    private void refreshGraphs() {
+        refreshBookChart();
+        refreshMemberChart();
+//        bookChart.setData(databaseHandler.getBookGraphStatistics());
+//        memberChart.setData(databaseHandler.getMemberGraphStatistics());
     }
 
     private void enableDisableGraph(Boolean status) {

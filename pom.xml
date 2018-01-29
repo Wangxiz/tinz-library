@@ -92,5 +92,10 @@
             <artifactId>jfoenix</artifactId>
             <version>1.6.0</version>
         </dependency>
+        <dependency>
+            <groupId>no.tornado</groupId>
+            <artifactId>tornadofx</artifactId>
+            <version>1.7.14</version>
+        </dependency>
     </dependencies>
 </project>

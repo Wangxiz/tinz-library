@@ -2,38 +2,50 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXSpinner?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import com.jfoenix.validation.RequiredFieldValidator?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="367.0" prefWidth="419.0" stylesheets="/css/dark-theme.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.login.LoginController">
+<StackPane stylesheets="/css/dark-theme.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.login.LoginController">
    <children>
-      <JFXTextField fx:id="validatedUserName" labelFloat="true" layoutX="95.0" layoutY="122.0" prefHeight="33.0" prefWidth="259.0" promptText="Username">
-         <!--<font>-->
-            <!--<Font size="16.0" />-->
-         <!--</font>-->
-         <validators>
-            <RequiredFieldValidator message="Input Required!" style="-fx-prompt-text-fill: #FFFF8D;">
-               <FontAwesomeIconView glyphName="WARNING" style="-fx-font-family: FontAwesome;" />
-            </RequiredFieldValidator>
-         </validators>
-      </JFXTextField>
-      <JFXPasswordField fx:id="validatedPassword" labelFloat="true" layoutX="97.0" layoutY="206.0" onAction="#handleLogin" prefHeight="34.0" prefWidth="259.0" promptText="Password">
-          <!--<font>-->
-              <!--<Font size="17.0" />-->
-          <!--</font>-->
-          <validators>
-              <RequiredFieldValidator message="Incorrect password! Please try again" style="-fx-text-fill: #FFFF8D;">
-                  <FontAwesomeIconView glyphName="WARNING" style="-fx-font-family: FontAwesome;" />
-              </RequiredFieldValidator>
+      <AnchorPane fx:id="loading" layoutX="10.0" layoutY="10.0" prefHeight="367.0" prefWidth="419.0">
+         <children>
+            <FontAwesomeIconView glyphName="LOCK" layoutX="200.0" layoutY="79.0" size="55" />
+            <JFXSpinner prefHeight="200.0" prefWidth="200.0" radius="40.0" AnchorPane.bottomAnchor="50" AnchorPane.leftAnchor="100" AnchorPane.rightAnchor="100" AnchorPane.topAnchor="150" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="AnchorPane" fx:id="login" prefHeight="367.0" prefWidth="419.0">
+         <children>
+            <JFXTextField fx:id="validatedUserName" labelFloat="true" layoutX="95.0" layoutY="122.0" prefHeight="33.0" prefWidth="259.0" promptText="Username">
+               <!--<font>-->
+                  <!--<Font size="16.0" />-->
+               <!--</font>-->
+               <validators>
+                  <RequiredFieldValidator message="Input Required!" style="-fx-prompt-text-fill: #FFFF8D;">
+                     <FontAwesomeIconView glyphName="WARNING" style="-fx-font-family: FontAwesome;" />
+                  </RequiredFieldValidator>
+               </validators>
+            </JFXTextField>
+            <JFXPasswordField fx:id="validatedPassword" labelFloat="true" layoutX="97.0" layoutY="206.0" onAction="#handleLogin" prefHeight="34.0" prefWidth="259.0" promptText="Password">
+                <!--<font>-->
+                    <!--<Font size="17.0" />-->
+                <!--</font>-->
+                <validators>
+                    <RequiredFieldValidator message="Incorrect password! Please try again" style="-fx-text-fill: #FFFF8D;">
+                        <FontAwesomeIconView glyphName="WARNING" style="-fx-font-family: FontAwesome;" />
+                    </RequiredFieldValidator>
 
-          </validators>
-      </JFXPasswordField>
-      <JFXButton layoutX="106.0" layoutY="283.0" onAction="#handleLogin" prefHeight="40.0" prefWidth="90.0" text="Login" />
-      <JFXButton layoutX="239.0" layoutY="283.0" onAction="#handleCancel" prefHeight="40.0" prefWidth="90.0" text="Cancel" />
-      <FontAwesomeIconView glyphName="LOCK" layoutX="200.0" layoutY="79.0" size="55" />
-      <FontAwesomeIconView glyphName="USER" layoutX="64.0" layoutY="149.0" size="25" />
-      <FontAwesomeIconView glyphName="KEY" layoutX="64.0" layoutY="236.0" size="25" />
+                </validators>
+            </JFXPasswordField>
+            <JFXButton layoutX="106.0" layoutY="283.0" onAction="#handleLogin" prefHeight="40.0" prefWidth="90.0" text="Login" />
+            <JFXButton layoutX="239.0" layoutY="283.0" onAction="#handleCancel" prefHeight="40.0" prefWidth="90.0" text="Cancel" />
+            <FontAwesomeIconView glyphName="LOCK" layoutX="200.0" layoutY="79.0" size="55" />
+            <FontAwesomeIconView glyphName="USER" layoutX="64.0" layoutY="149.0" size="25" />
+            <FontAwesomeIconView glyphName="KEY" layoutX="64.0" layoutY="236.0" size="25" />
+         </children>
+      </AnchorPane>
    </children>
-</AnchorPane>
+</StackPane>

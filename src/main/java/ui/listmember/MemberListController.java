@@ -20,6 +20,7 @@ import ui.addbook.BookAddController;
 import ui.addmember.MemberAddController;
 import ui.main.MainController;
 
+import static util.Constant.mainController;
 import static util.Constant.snackbar;
 import static util.LibraryAssistantUtil.setStageIcon;
 import static util.alert.AlertMaker.showSimpleAlert;
@@ -101,6 +102,7 @@ public class MemberListController {
         if (answer.isPresent() && answer.get() == ButtonType.OK) {
             Boolean result = DatabaseHandler.getInstance().deleteMember(selectedForDeletion);
             if (result) {
+                mainController.refreshMemberChart();
                 snackbar.fireEvent(new JFXSnackbar.SnackbarEvent("'" + selectedForDeletion.getName()+ "' was deleted successfully."));
                 list.remove(selectedForDeletion);
             }

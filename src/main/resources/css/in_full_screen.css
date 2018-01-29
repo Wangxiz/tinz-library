@@ -42,6 +42,11 @@
 
 /* Main Screen CSS Styling starts here */
 /* Tab Pane styling */
+/*.tab-pane {*/
+    /*-fx-open-tab-animation: none;*/
+    /*-fx-close-tab-animation: none;*/
+/*}*/
+
 .tab {
     -fx-background-color: -fx-primary;
     -fx-pref-width : 350;

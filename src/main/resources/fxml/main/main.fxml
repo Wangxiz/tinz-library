@@ -84,7 +84,7 @@
                <center>
                   <AnchorPane BorderPane.alignment="CENTER">
                      <children>
-                        <JFXTabPane fx:id="mainTabPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <JFXTabPane fx:id="mainTabPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" styleClass="tab-pane">
                            <tabs>
                               <Tab fx:id="bookIssueTab" text="Book Issue">
                                  <content>
@@ -281,7 +281,7 @@
                </center>
                <right>
                   <AnchorPane>
-                     <JFXDrawer fx:id="drawer" defaultDrawerSize="150.0" direction="RIGHT" BorderPane.alignment="CENTER" AnchorPane.topAnchor="60"/>
+                     <JFXDrawer fx:id="drawer" defaultDrawerSize="150.0" direction="RIGHT" BorderPane.alignment="CENTER" AnchorPane.topAnchor="60" AnchorPane.rightAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.bottomAnchor="0"/>
                   </AnchorPane>
                </right>
             </BorderPane>

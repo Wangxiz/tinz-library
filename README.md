@@ -20,13 +20,14 @@ This is a **Material Design Library Management Software** developed using JavaFX
 - \#06 ~~Popup 窗口不能显示~~ **Fixed!**
 - \#07 控制 TableView 显示的列宽
 - \#08 ~~Popup 窗口位置不能控制~~ **Fixed!**
-- \#09 添加 book 或者 member 之后，主界面的 chart 不会自动更新
+- \#09 ~~添加/删除 book 或者 member 之后，主界面的 chart 不会自动更新~~ **Fixed!**
 - \#10 每次打开 About 等截面都要重新 load
 
 ## Releases
 ### 2018-01-29
 - 修改主界面 Hamburger 的 Transition
-- 修改 Drawer 的显示
+- 修改 Drawer 的显示, 与 TabPane 的 tab-content-area 同高
+- Fixed bug#09
 
 ### 2018-01-28
 - 实现 Login 界面可拖动
