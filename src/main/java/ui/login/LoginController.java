@@ -4,16 +4,20 @@ import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import ui.main.Login;
 import ui.main.MainController;
 import ui.settings.Preferences;
 import util.Constant;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -22,9 +26,7 @@ import static org.apache.commons.codec.digest.DigestUtils.shaHex;
 import static ui.settings.Preferences.getPreferences;
 import static util.LibraryAssistantUtil.setStageIcon;
 
-public class LoginController {
-    @FXML
-    private AnchorPane loading;
+public class LoginController implements Initializable {
     @FXML
     private AnchorPane login;
     @FXML
@@ -34,16 +36,18 @@ public class LoginController {
 
     private Preferences preference;
 
-    @FXML
-    public void initialize() {
+    private Login mainApp;
+
+    public void setApp(Login mainApp){
+        this.mainApp = mainApp;
+    }
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
         preference = getPreferences();
 
         validatedUserName.textProperty().addListener((observable, oldValue, newValue) -> validatedUserName.validate());
         validatedPassword.textProperty().addListener((observable, oldValue, newValue) -> validatedPassword.validate());
-
-        validatedUserName.setText("Wangxiz");
-        validatedPassword.setText("0916");
-        loading.setVisible(false);
     }
 
     @FXML
@@ -53,9 +57,7 @@ public class LoginController {
 
         if (uname.equals(preference.getUsername()) && pword.equals(preference.getPassword())) {
 //            closeStage();
-            loading.setVisible(true);
-            login.setVisible(false);
-            login.toBack();
+            mainApp.gotoLoading();
             loadMain();
         } else {
             validatedPassword.clear();
@@ -93,9 +95,7 @@ public class LoginController {
             stage.setScene(new Scene(parent));
             stage.setResizable(true);
             stage.setMaximized(true);
-            int i = 100000000;
-            while (i > 0) i--;
-//            TimeUnit.MILLISECONDS.sleep(500);
+
             stage.show();
         } catch (IOException/* | InterruptedException*/ ex) {
             Logger.getLogger(MainController.class.getName()).log(Level.SEVERE, null, ex);

@@ -22,6 +22,7 @@ This is a **Material Design Library Management Software** developed using JavaFX
 - \#08 ~~Popup 窗口位置不能控制~~ **Fixed!**
 - \#09 ~~添加/删除 book 或者 member 之后，主界面的 chart 不会自动更新~~ **Fixed!**
 - \#10 每次打开 About 等截面都要重新 load
+- \#11 SEVERE, 切换窗口实现的bug
 
 ## Releases
 ### 2018-01-29
