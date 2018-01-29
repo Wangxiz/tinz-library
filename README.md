@@ -24,6 +24,10 @@ This is a **Material Design Library Management Software** developed using JavaFX
 - \#10 每次打开 About 等截面都要重新 load
 
 ## Releases
+### 2018-01-29
+- 修改主界面 Hamburger 的 Transition
+- 修改 Drawer 的显示
+
 ### 2018-01-28
 - 实现 Login 界面可拖动
 - 为菜单栏添加快捷键

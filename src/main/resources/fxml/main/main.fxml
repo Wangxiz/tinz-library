@@ -280,7 +280,9 @@
                   </AnchorPane>
                </center>
                <right>
-                  <JFXDrawer fx:id="drawer" defaultDrawerSize="150.0" direction="RIGHT" BorderPane.alignment="CENTER" />
+                  <AnchorPane>
+                     <JFXDrawer fx:id="drawer" defaultDrawerSize="150.0" direction="RIGHT" BorderPane.alignment="CENTER" AnchorPane.topAnchor="60"/>
+                  </AnchorPane>
                </right>
             </BorderPane>
          </children>

@@ -2,6 +2,8 @@ package ui.main;
 
 import com.jfoenix.controls.*;
 import com.jfoenix.effects.JFXDepthManager;
+import com.jfoenix.transitions.hamburger.HamburgerBackArrowBasicTransition;
+import com.jfoenix.transitions.hamburger.HamburgerNextArrowBasicTransition;
 import com.jfoenix.transitions.hamburger.HamburgerSlideCloseTransition;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -438,7 +440,7 @@ public class MainController {
         } catch (IOException ex) {
             Logger.getLogger(MainController.class.getName()).log(Level.SEVERE, null, ex);
         }
-        HamburgerSlideCloseTransition task = new HamburgerSlideCloseTransition(hamburger);
+        HamburgerNextArrowBasicTransition task = new HamburgerNextArrowBasicTransition(hamburger);
         task.setRate(-1);
         hamburger.addEventHandler(MouseEvent.MOUSE_CLICKED, (Event event) -> {
             task.setRate(task.getRate() * -1);
