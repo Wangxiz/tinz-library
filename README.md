@@ -18,13 +18,16 @@ This is a **Material Design Library Management Software** developed using JavaFX
 - \#04 ~~当开始输入的时候即检测有输入，即时去掉 input request 的错误提示~~ **Fixed!**
 - \#05 ~~编辑 book 和 member 信息后不会自动更新~~ **Fixed!**
 - \#06 ~~Popup 窗口不能显示~~ **Fixed!**
-- \#07 控制 TableView 显示的列宽
+- \#07 控制 TableView 显示的列宽， Idea: [TableView SmartResize](https://github.com/edvin/tornadofx/wiki/TableView-SmartResize)
 - \#08 ~~Popup 窗口位置不能控制~~ **Fixed!**
 - \#09 ~~添加/删除 book 或者 member 之后，主界面的 chart 不会自动更新~~ **Fixed!**
 - \#10 每次打开 About 等截面都要重新 load
-- \#11 SEVERE, 切换窗口实现的bug
 
 ## Releases
+### 2018-01-30
+- 学习 TornadoFX
+- 学习 Kotlin
+
 ### 2018-01-29
 - 修改主界面 Hamburger 的 Transition
 - 修改 Drawer 的显示, 与 TabPane 的 tab-content-area 同高
