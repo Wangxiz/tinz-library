@@ -8,12 +8,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane id="AnchorPane" fx:id="login" stylesheets="/css/dark-theme.css" prefHeight="367.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.login.LoginController">
+<?import javafx.scene.text.Font?>
+<AnchorPane id="AnchorPane" stylesheets="/css/dark-theme.css" prefHeight="367.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.login.LoginController">
    <children>
       <JFXTextField fx:id="validatedUserName" labelFloat="true" layoutX="95.0" layoutY="122.0" prefHeight="33.0" prefWidth="259.0" promptText="Username">
-         <!--<font>-->
-            <!--<Font size="16.0" />-->
-         <!--</font>-->
+         <font>
+            <Font size="16.0" />
+         </font>
          <validators>
             <RequiredFieldValidator message="Input Required!" style="-fx-prompt-text-fill: #FFFF8D;">
                <FontAwesomeIconView glyphName="WARNING" style="-fx-font-family: FontAwesome;" />
@@ -21,9 +22,9 @@
          </validators>
       </JFXTextField>
       <JFXPasswordField fx:id="validatedPassword" labelFloat="true" layoutX="97.0" layoutY="206.0" onAction="#handleLogin" prefHeight="34.0" prefWidth="259.0" promptText="Password">
-          <!--<font>-->
-              <!--<Font size="17.0" />-->
-          <!--</font>-->
+          <font>
+              <Font size="17.0" />
+          </font>
           <validators>
                     <RequiredFieldValidator message="Incorrect password! Please try again" style="-fx-text-fill: #FFFF8D;">
                   <FontAwesomeIconView glyphName="WARNING" style="-fx-font-family: FontAwesome;" />

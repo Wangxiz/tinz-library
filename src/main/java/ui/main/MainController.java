@@ -2,9 +2,8 @@ package ui.main;
 
 import com.jfoenix.controls.*;
 import com.jfoenix.effects.JFXDepthManager;
-import com.jfoenix.transitions.hamburger.HamburgerBackArrowBasicTransition;
 import com.jfoenix.transitions.hamburger.HamburgerNextArrowBasicTransition;
-import com.jfoenix.transitions.hamburger.HamburgerSlideCloseTransition;
+import database.DatabaseHandler;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -15,8 +14,6 @@ import javafx.scene.chart.PieChart;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
@@ -25,13 +22,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import database.DatabaseHandler;
 import javafx.stage.StageStyle;
-
-import static util.alert.AlertMaker.showMaterialDialog;
-import static util.LibraryAssistantUtil.loadWindow;
-import static util.Constant.mainStage;
-import static util.Constant.snackbar;
 
 import java.io.IOException;
 import java.sql.ResultSet;
@@ -42,6 +33,11 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import static util.Constant.mainStage;
+import static util.Constant.snackbar;
+import static util.LibraryAssistantUtil.loadWindow;
+import static util.alert.AlertMaker.showMaterialDialog;
 
 public class MainController {
     private static final String BOOK_NOT_AVAILABLE = "Not Available";

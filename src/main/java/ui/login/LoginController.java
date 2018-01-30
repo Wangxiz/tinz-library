@@ -28,19 +28,11 @@ import static util.LibraryAssistantUtil.setStageIcon;
 
 public class LoginController implements Initializable {
     @FXML
-    private AnchorPane login;
-    @FXML
     private JFXTextField validatedUserName;
     @FXML
     private JFXPasswordField validatedPassword;
 
     private Preferences preference;
-
-    private Login mainApp;
-
-    public void setApp(Login mainApp){
-        this.mainApp = mainApp;
-    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -56,8 +48,7 @@ public class LoginController implements Initializable {
         String pword = shaHex(validatedPassword.getText());
 
         if (uname.equals(preference.getUsername()) && pword.equals(preference.getPassword())) {
-//            closeStage();
-            mainApp.gotoLoading();
+            closeStage();
             loadMain();
         } else {
             validatedPassword.clear();
@@ -76,7 +67,7 @@ public class LoginController implements Initializable {
         stage.close();
     }
 
-    private void loadMain() {
+    public void loadMain() {
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/fxml/main/main.fxml"));
@@ -97,7 +88,7 @@ public class LoginController implements Initializable {
             stage.setMaximized(true);
 
             stage.show();
-        } catch (IOException/* | InterruptedException*/ ex) {
+        } catch (IOException ex) {
             Logger.getLogger(MainController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
